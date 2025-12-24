@@ -12,7 +12,7 @@ part 'tweet_context_annotation_group.freezed.dart';
 part 'tweet_context_annotation_group.g.dart';
 
 @freezed
-class TweetContextAnnotationGroup with _$TweetContextAnnotationGroup {
+abstract class TweetContextAnnotationGroup with _$TweetContextAnnotationGroup {
   const factory TweetContextAnnotationGroup({
     /// Contains elements which identify detailed information regarding the
     /// domain classification based on Tweet text.

@@ -9,7 +9,7 @@ part 'tweet_annotation.freezed.dart';
 part 'tweet_annotation.g.dart';
 
 @freezed
-class TweetAnnotation with _$TweetAnnotation {
+abstract class TweetAnnotation with _$TweetAnnotation {
   const factory TweetAnnotation({
     /// The start position (zero-based) of the text used to annotate the Tweet.
     /// All start indices are inclusive.

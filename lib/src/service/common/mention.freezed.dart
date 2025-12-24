@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,236 +9,298 @@ part of 'mention.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-Mention _$MentionFromJson(Map<String, dynamic> json) {
-  return _Mention.fromJson(json);
-}
 
 /// @nodoc
 mixin _$Mention {
-  /// The user id that created the mentions.
-  String? get id => throw _privateConstructorUsedError;
 
-  /// The part of text recognized as a user mention.
-  ///
-  /// You can obtain the expanded object in includes.users by adding
-  /// `TweetExpansion.entitiesMentionsUsername` in the request's query
-  /// parameter.
-  String get username => throw _privateConstructorUsedError;
+/// The user id that created the mentions.
+ String? get id;/// The part of text recognized as a user mention.
+///
+/// You can obtain the expanded object in includes.users by adding
+/// `TweetExpansion.entitiesMentionsUsername` in the request's query
+/// parameter.
+ String get username;/// The start position (zero-based) of the recognized user mention within
+/// the Tweet. All start indices are inclusive.
+ int get start;/// The end position (zero-based) of the recognized user mention within t
+/// he Tweet. This end index is exclusive.
+ int get end;
+/// Create a copy of Mention
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$MentionCopyWith<Mention> get copyWith => _$MentionCopyWithImpl<Mention>(this as Mention, _$identity);
 
-  /// The start position (zero-based) of the recognized user mention within
-  /// the Tweet. All start indices are inclusive.
-  int get start => throw _privateConstructorUsedError;
+  /// Serializes this Mention to a JSON map.
+  Map<String, dynamic> toJson();
 
-  /// The end position (zero-based) of the recognized user mention within t
-  /// he Tweet. This end index is exclusive.
-  int get end => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $MentionCopyWith<Mention> get copyWith => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Mention&&(identical(other.id, id) || other.id == id)&&(identical(other.username, username) || other.username == username)&&(identical(other.start, start) || other.start == start)&&(identical(other.end, end) || other.end == end));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,username,start,end);
+
+@override
+String toString() {
+  return 'Mention(id: $id, username: $username, start: $start, end: $end)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $MentionCopyWith<$Res> {
-  factory $MentionCopyWith(Mention value, $Res Function(Mention) then) =
-      _$MentionCopyWithImpl<$Res, Mention>;
-  @useResult
-  $Res call({String? id, String username, int start, int end});
-}
+abstract mixin class $MentionCopyWith<$Res>  {
+  factory $MentionCopyWith(Mention value, $Res Function(Mention) _then) = _$MentionCopyWithImpl;
+@useResult
+$Res call({
+ String? id, String username, int start, int end
+});
 
+
+
+
+}
 /// @nodoc
-class _$MentionCopyWithImpl<$Res, $Val extends Mention>
+class _$MentionCopyWithImpl<$Res>
     implements $MentionCopyWith<$Res> {
-  _$MentionCopyWithImpl(this._value, this._then);
+  _$MentionCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Mention _self;
+  final $Res Function(Mention) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? username = null,
-    Object? start = null,
-    Object? end = null,
-  }) {
-    return _then(_value.copyWith(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      start: null == start
-          ? _value.start
-          : start // ignore: cast_nullable_to_non_nullable
-              as int,
-      end: null == end
-          ? _value.end
-          : end // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of Mention
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? username = null,Object? start = null,Object? end = null,}) {
+  return _then(_self.copyWith(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,username: null == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String,start: null == start ? _self.start : start // ignore: cast_nullable_to_non_nullable
+as int,end: null == end ? _self.end : end // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_MentionCopyWith<$Res> implements $MentionCopyWith<$Res> {
-  factory _$$_MentionCopyWith(
-          _$_Mention value, $Res Function(_$_Mention) then) =
-      __$$_MentionCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String? id, String username, int start, int end});
 }
 
-/// @nodoc
-class __$$_MentionCopyWithImpl<$Res>
-    extends _$MentionCopyWithImpl<$Res, _$_Mention>
-    implements _$$_MentionCopyWith<$Res> {
-  __$$_MentionCopyWithImpl(_$_Mention _value, $Res Function(_$_Mention) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = freezed,
-    Object? username = null,
-    Object? start = null,
-    Object? end = null,
-  }) {
-    return _then(_$_Mention(
-      id: freezed == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String?,
-      username: null == username
-          ? _value.username
-          : username // ignore: cast_nullable_to_non_nullable
-              as String,
-      start: null == start
-          ? _value.start
-          : start // ignore: cast_nullable_to_non_nullable
-              as int,
-      end: null == end
-          ? _value.end
-          : end // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [Mention].
+extension MentionPatterns on Mention {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Mention value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Mention() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Mention value)  $default,){
+final _that = this;
+switch (_that) {
+case _Mention():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Mention value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Mention() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String? id,  String username,  int start,  int end)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Mention() when $default != null:
+return $default(_that.id,_that.username,_that.start,_that.end);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String? id,  String username,  int start,  int end)  $default,) {final _that = this;
+switch (_that) {
+case _Mention():
+return $default(_that.id,_that.username,_that.start,_that.end);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String? id,  String username,  int start,  int end)?  $default,) {final _that = this;
+switch (_that) {
+case _Mention() when $default != null:
+return $default(_that.id,_that.username,_that.start,_that.end);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 
 @JsonSerializable(includeIfNull: false)
-class _$_Mention implements _Mention {
-  const _$_Mention(
-      {this.id,
-      required this.username,
-      required this.start,
-      required this.end});
+class _Mention implements Mention {
+  const _Mention({this.id, required this.username, required this.start, required this.end});
+  factory _Mention.fromJson(Map<String, dynamic> json) => _$MentionFromJson(json);
 
-  factory _$_Mention.fromJson(Map<String, dynamic> json) =>
-      _$$_MentionFromJson(json);
+/// The user id that created the mentions.
+@override final  String? id;
+/// The part of text recognized as a user mention.
+///
+/// You can obtain the expanded object in includes.users by adding
+/// `TweetExpansion.entitiesMentionsUsername` in the request's query
+/// parameter.
+@override final  String username;
+/// The start position (zero-based) of the recognized user mention within
+/// the Tweet. All start indices are inclusive.
+@override final  int start;
+/// The end position (zero-based) of the recognized user mention within t
+/// he Tweet. This end index is exclusive.
+@override final  int end;
 
-  /// The user id that created the mentions.
-  @override
-  final String? id;
+/// Create a copy of Mention
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$MentionCopyWith<_Mention> get copyWith => __$MentionCopyWithImpl<_Mention>(this, _$identity);
 
-  /// The part of text recognized as a user mention.
-  ///
-  /// You can obtain the expanded object in includes.users by adding
-  /// `TweetExpansion.entitiesMentionsUsername` in the request's query
-  /// parameter.
-  @override
-  final String username;
-
-  /// The start position (zero-based) of the recognized user mention within
-  /// the Tweet. All start indices are inclusive.
-  @override
-  final int start;
-
-  /// The end position (zero-based) of the recognized user mention within t
-  /// he Tweet. This end index is exclusive.
-  @override
-  final int end;
-
-  @override
-  String toString() {
-    return 'Mention(id: $id, username: $username, start: $start, end: $end)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Mention &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.username, username) ||
-                other.username == username) &&
-            (identical(other.start, start) || other.start == start) &&
-            (identical(other.end, end) || other.end == end));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, username, start, end);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_MentionCopyWith<_$_Mention> get copyWith =>
-      __$$_MentionCopyWithImpl<_$_Mention>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_MentionToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$MentionToJson(this, );
 }
 
-abstract class _Mention implements Mention {
-  const factory _Mention(
-      {final String? id,
-      required final String username,
-      required final int start,
-      required final int end}) = _$_Mention;
-
-  factory _Mention.fromJson(Map<String, dynamic> json) = _$_Mention.fromJson;
-
-  @override
-
-  /// The user id that created the mentions.
-  String? get id;
-  @override
-
-  /// The part of text recognized as a user mention.
-  ///
-  /// You can obtain the expanded object in includes.users by adding
-  /// `TweetExpansion.entitiesMentionsUsername` in the request's query
-  /// parameter.
-  String get username;
-  @override
-
-  /// The start position (zero-based) of the recognized user mention within
-  /// the Tweet. All start indices are inclusive.
-  int get start;
-  @override
-
-  /// The end position (zero-based) of the recognized user mention within t
-  /// he Tweet. This end index is exclusive.
-  int get end;
-  @override
-  @JsonKey(ignore: true)
-  _$$_MentionCopyWith<_$_Mention> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Mention&&(identical(other.id, id) || other.id == id)&&(identical(other.username, username) || other.username == username)&&(identical(other.start, start) || other.start == start)&&(identical(other.end, end) || other.end == end));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,username,start,end);
+
+@override
+String toString() {
+  return 'Mention(id: $id, username: $username, start: $start, end: $end)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$MentionCopyWith<$Res> implements $MentionCopyWith<$Res> {
+  factory _$MentionCopyWith(_Mention value, $Res Function(_Mention) _then) = __$MentionCopyWithImpl;
+@override @useResult
+$Res call({
+ String? id, String username, int start, int end
+});
+
+
+
+
+}
+/// @nodoc
+class __$MentionCopyWithImpl<$Res>
+    implements _$MentionCopyWith<$Res> {
+  __$MentionCopyWithImpl(this._self, this._then);
+
+  final _Mention _self;
+  final $Res Function(_Mention) _then;
+
+/// Create a copy of Mention
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? username = null,Object? start = null,Object? end = null,}) {
+  return _then(_Mention(
+id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String?,username: null == username ? _self.username : username // ignore: cast_nullable_to_non_nullable
+as String,start: null == start ? _self.start : start // ignore: cast_nullable_to_non_nullable
+as int,end: null == end ? _self.end : end // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
+// dart format on

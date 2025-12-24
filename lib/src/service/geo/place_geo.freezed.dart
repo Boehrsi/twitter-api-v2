@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,215 +9,295 @@ part of 'place_geo.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-PlaceGeo _$PlaceGeoFromJson(Map<String, dynamic> json) {
-  return _PlaceGeo.fromJson(json);
-}
 
 /// @nodoc
 mixin _$PlaceGeo {
-  /// The place type.
-  String get type => throw _privateConstructorUsedError;
 
-  /// The bounding box.
-  List<double> get bbox => throw _privateConstructorUsedError;
+/// The place type.
+ String get type;/// The bounding box.
+ List<double> get bbox;/// The place properties.
+ Map<String, dynamic> get properties;
+/// Create a copy of PlaceGeo
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$PlaceGeoCopyWith<PlaceGeo> get copyWith => _$PlaceGeoCopyWithImpl<PlaceGeo>(this as PlaceGeo, _$identity);
 
-  /// The place properties.
-  Map<String, dynamic> get properties => throw _privateConstructorUsedError;
+  /// Serializes this PlaceGeo to a JSON map.
+  Map<String, dynamic> toJson();
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $PlaceGeoCopyWith<PlaceGeo> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is PlaceGeo&&(identical(other.type, type) || other.type == type)&&const DeepCollectionEquality().equals(other.bbox, bbox)&&const DeepCollectionEquality().equals(other.properties, properties));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,const DeepCollectionEquality().hash(bbox),const DeepCollectionEquality().hash(properties));
+
+@override
+String toString() {
+  return 'PlaceGeo(type: $type, bbox: $bbox, properties: $properties)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $PlaceGeoCopyWith<$Res> {
-  factory $PlaceGeoCopyWith(PlaceGeo value, $Res Function(PlaceGeo) then) =
-      _$PlaceGeoCopyWithImpl<$Res, PlaceGeo>;
-  @useResult
-  $Res call({String type, List<double> bbox, Map<String, dynamic> properties});
-}
+abstract mixin class $PlaceGeoCopyWith<$Res>  {
+  factory $PlaceGeoCopyWith(PlaceGeo value, $Res Function(PlaceGeo) _then) = _$PlaceGeoCopyWithImpl;
+@useResult
+$Res call({
+ String type, List<double> bbox, Map<String, dynamic> properties
+});
 
+
+
+
+}
 /// @nodoc
-class _$PlaceGeoCopyWithImpl<$Res, $Val extends PlaceGeo>
+class _$PlaceGeoCopyWithImpl<$Res>
     implements $PlaceGeoCopyWith<$Res> {
-  _$PlaceGeoCopyWithImpl(this._value, this._then);
+  _$PlaceGeoCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final PlaceGeo _self;
+  final $Res Function(PlaceGeo) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? bbox = null,
-    Object? properties = null,
-  }) {
-    return _then(_value.copyWith(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      bbox: null == bbox
-          ? _value.bbox
-          : bbox // ignore: cast_nullable_to_non_nullable
-              as List<double>,
-      properties: null == properties
-          ? _value.properties
-          : properties // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-    ) as $Val);
-  }
+/// Create a copy of PlaceGeo
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? type = null,Object? bbox = null,Object? properties = null,}) {
+  return _then(_self.copyWith(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,bbox: null == bbox ? _self.bbox : bbox // ignore: cast_nullable_to_non_nullable
+as List<double>,properties: null == properties ? _self.properties : properties // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_PlaceGeoCopyWith<$Res> implements $PlaceGeoCopyWith<$Res> {
-  factory _$$_PlaceGeoCopyWith(
-          _$_PlaceGeo value, $Res Function(_$_PlaceGeo) then) =
-      __$$_PlaceGeoCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String type, List<double> bbox, Map<String, dynamic> properties});
 }
 
-/// @nodoc
-class __$$_PlaceGeoCopyWithImpl<$Res>
-    extends _$PlaceGeoCopyWithImpl<$Res, _$_PlaceGeo>
-    implements _$$_PlaceGeoCopyWith<$Res> {
-  __$$_PlaceGeoCopyWithImpl(
-      _$_PlaceGeo _value, $Res Function(_$_PlaceGeo) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? type = null,
-    Object? bbox = null,
-    Object? properties = null,
-  }) {
-    return _then(_$_PlaceGeo(
-      type: null == type
-          ? _value.type
-          : type // ignore: cast_nullable_to_non_nullable
-              as String,
-      bbox: null == bbox
-          ? _value._bbox
-          : bbox // ignore: cast_nullable_to_non_nullable
-              as List<double>,
-      properties: null == properties
-          ? _value._properties
-          : properties // ignore: cast_nullable_to_non_nullable
-              as Map<String, dynamic>,
-    ));
-  }
+/// Adds pattern-matching-related methods to [PlaceGeo].
+extension PlaceGeoPatterns on PlaceGeo {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _PlaceGeo value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _PlaceGeo() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _PlaceGeo value)  $default,){
+final _that = this;
+switch (_that) {
+case _PlaceGeo():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _PlaceGeo value)?  $default,){
+final _that = this;
+switch (_that) {
+case _PlaceGeo() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String type,  List<double> bbox,  Map<String, dynamic> properties)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _PlaceGeo() when $default != null:
+return $default(_that.type,_that.bbox,_that.properties);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String type,  List<double> bbox,  Map<String, dynamic> properties)  $default,) {final _that = this;
+switch (_that) {
+case _PlaceGeo():
+return $default(_that.type,_that.bbox,_that.properties);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String type,  List<double> bbox,  Map<String, dynamic> properties)?  $default,) {final _that = this;
+switch (_that) {
+case _PlaceGeo() when $default != null:
+return $default(_that.type,_that.bbox,_that.properties);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_PlaceGeo implements _PlaceGeo {
-  const _$_PlaceGeo(
-      {required this.type,
-      required final List<double> bbox,
-      required final Map<String, dynamic> properties})
-      : _bbox = bbox,
-        _properties = properties;
 
-  factory _$_PlaceGeo.fromJson(Map<String, dynamic> json) =>
-      _$$_PlaceGeoFromJson(json);
+class _PlaceGeo implements PlaceGeo {
+  const _PlaceGeo({required this.type, required final  List<double> bbox, required final  Map<String, dynamic> properties}): _bbox = bbox,_properties = properties;
+  factory _PlaceGeo.fromJson(Map<String, dynamic> json) => _$PlaceGeoFromJson(json);
 
-  /// The place type.
-  @override
-  final String type;
-
-  /// The bounding box.
-  final List<double> _bbox;
-
-  /// The bounding box.
-  @override
-  List<double> get bbox {
-    if (_bbox is EqualUnmodifiableListView) return _bbox;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_bbox);
-  }
-
-  /// The place properties.
-  final Map<String, dynamic> _properties;
-
-  /// The place properties.
-  @override
-  Map<String, dynamic> get properties {
-    if (_properties is EqualUnmodifiableMapView) return _properties;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableMapView(_properties);
-  }
-
-  @override
-  String toString() {
-    return 'PlaceGeo(type: $type, bbox: $bbox, properties: $properties)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_PlaceGeo &&
-            (identical(other.type, type) || other.type == type) &&
-            const DeepCollectionEquality().equals(other._bbox, _bbox) &&
-            const DeepCollectionEquality()
-                .equals(other._properties, _properties));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      type,
-      const DeepCollectionEquality().hash(_bbox),
-      const DeepCollectionEquality().hash(_properties));
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_PlaceGeoCopyWith<_$_PlaceGeo> get copyWith =>
-      __$$_PlaceGeoCopyWithImpl<_$_PlaceGeo>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_PlaceGeoToJson(
-      this,
-    );
-  }
+/// The place type.
+@override final  String type;
+/// The bounding box.
+ final  List<double> _bbox;
+/// The bounding box.
+@override List<double> get bbox {
+  if (_bbox is EqualUnmodifiableListView) return _bbox;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(_bbox);
 }
 
-abstract class _PlaceGeo implements PlaceGeo {
-  const factory _PlaceGeo(
-      {required final String type,
-      required final List<double> bbox,
-      required final Map<String, dynamic> properties}) = _$_PlaceGeo;
-
-  factory _PlaceGeo.fromJson(Map<String, dynamic> json) = _$_PlaceGeo.fromJson;
-
-  @override
-
-  /// The place type.
-  String get type;
-  @override
-
-  /// The bounding box.
-  List<double> get bbox;
-  @override
-
-  /// The place properties.
-  Map<String, dynamic> get properties;
-  @override
-  @JsonKey(ignore: true)
-  _$$_PlaceGeoCopyWith<_$_PlaceGeo> get copyWith =>
-      throw _privateConstructorUsedError;
+/// The place properties.
+ final  Map<String, dynamic> _properties;
+/// The place properties.
+@override Map<String, dynamic> get properties {
+  if (_properties is EqualUnmodifiableMapView) return _properties;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableMapView(_properties);
 }
+
+
+/// Create a copy of PlaceGeo
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$PlaceGeoCopyWith<_PlaceGeo> get copyWith => __$PlaceGeoCopyWithImpl<_PlaceGeo>(this, _$identity);
+
+@override
+Map<String, dynamic> toJson() {
+  return _$PlaceGeoToJson(this, );
+}
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _PlaceGeo&&(identical(other.type, type) || other.type == type)&&const DeepCollectionEquality().equals(other._bbox, _bbox)&&const DeepCollectionEquality().equals(other._properties, _properties));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,type,const DeepCollectionEquality().hash(_bbox),const DeepCollectionEquality().hash(_properties));
+
+@override
+String toString() {
+  return 'PlaceGeo(type: $type, bbox: $bbox, properties: $properties)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$PlaceGeoCopyWith<$Res> implements $PlaceGeoCopyWith<$Res> {
+  factory _$PlaceGeoCopyWith(_PlaceGeo value, $Res Function(_PlaceGeo) _then) = __$PlaceGeoCopyWithImpl;
+@override @useResult
+$Res call({
+ String type, List<double> bbox, Map<String, dynamic> properties
+});
+
+
+
+
+}
+/// @nodoc
+class __$PlaceGeoCopyWithImpl<$Res>
+    implements _$PlaceGeoCopyWith<$Res> {
+  __$PlaceGeoCopyWithImpl(this._self, this._then);
+
+  final _PlaceGeo _self;
+  final $Res Function(_PlaceGeo) _then;
+
+/// Create a copy of PlaceGeo
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? type = null,Object? bbox = null,Object? properties = null,}) {
+  return _then(_PlaceGeo(
+type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as String,bbox: null == bbox ? _self._bbox : bbox // ignore: cast_nullable_to_non_nullable
+as List<double>,properties: null == properties ? _self._properties : properties // ignore: cast_nullable_to_non_nullable
+as Map<String, dynamic>,
+  ));
+}
+
+
+}
+
+// dart format on

@@ -17,7 +17,7 @@ part 'tweet_entities.freezed.dart';
 part 'tweet_entities.g.dart';
 
 @freezed
-class TweetEntities with _$TweetEntities {
+abstract class TweetEntities with _$TweetEntities {
   @JsonSerializable(includeIfNull: false)
   const factory TweetEntities({
     /// Contains details about annotations relative to the text within a Tweet.

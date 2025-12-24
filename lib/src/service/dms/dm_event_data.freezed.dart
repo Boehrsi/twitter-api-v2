@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,397 +9,351 @@ part of 'dm_event_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-DMEventData _$DMEventDataFromJson(Map<String, dynamic> json) {
-  return _DMEventData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$DMEventData {
-  /// The id of the Direct Message event.
-  String get id => throw _privateConstructorUsedError;
 
-  /// The type of event.
-  DMEventType get eventType => throw _privateConstructorUsedError;
+/// The id of the Direct Message event.
+ String get id;/// The type of event.
+ DMEventType get eventType;/// The text included in the Direct Message.
+ String? get text;/// The id of the user who sent the Direct Message.
+ String? get senderId;/// The id of the Direct Message to which the event belongs.
+@JsonKey(name: 'dm_conversation_id') String? get conversationId;/// Expansion of a "shared" Tweet in the Direct Message.
+///
+/// If the parent Tweet is a Retweet, a Retweet with comment
+/// (also known as Quoted Tweet) or a Reply, it will include the
+/// related Tweet referenced to by its parent.
+ List<DMReferencedTweet>? get referencedTweets;/// The attached urls and media information for expansion.
+ DMAttachments? get attachments;/// The timestamp of the Direct Message event creation.
+ DateTime? get createdAt;
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$DMEventDataCopyWith<DMEventData> get copyWith => _$DMEventDataCopyWithImpl<DMEventData>(this as DMEventData, _$identity);
 
-  /// The text included in the Direct Message.
-  String? get text => throw _privateConstructorUsedError;
+  /// Serializes this DMEventData to a JSON map.
+  Map<String, dynamic> toJson();
 
-  /// The id of the user who sent the Direct Message.
-  String? get senderId => throw _privateConstructorUsedError;
 
-  /// The id of the Direct Message to which the event belongs.
-  @JsonKey(name: 'dm_conversation_id')
-  String? get conversationId => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is DMEventData&&(identical(other.id, id) || other.id == id)&&(identical(other.eventType, eventType) || other.eventType == eventType)&&(identical(other.text, text) || other.text == text)&&(identical(other.senderId, senderId) || other.senderId == senderId)&&(identical(other.conversationId, conversationId) || other.conversationId == conversationId)&&const DeepCollectionEquality().equals(other.referencedTweets, referencedTweets)&&(identical(other.attachments, attachments) || other.attachments == attachments)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
+}
 
-  /// Expansion of a "shared" Tweet in the Direct Message.
-  ///
-  /// If the parent Tweet is a Retweet, a Retweet with comment
-  /// (also known as Quoted Tweet) or a Reply, it will include the
-  /// related Tweet referenced to by its parent.
-  List<DMReferencedTweet>? get referencedTweets =>
-      throw _privateConstructorUsedError;
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,eventType,text,senderId,conversationId,const DeepCollectionEquality().hash(referencedTweets),attachments,createdAt);
 
-  /// The attached urls and media information for expansion.
-  DMAttachments? get attachments => throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'DMEventData(id: $id, eventType: $eventType, text: $text, senderId: $senderId, conversationId: $conversationId, referencedTweets: $referencedTweets, attachments: $attachments, createdAt: $createdAt)';
+}
 
-  /// The timestamp of the Direct Message event creation.
-  DateTime? get createdAt => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $DMEventDataCopyWith<DMEventData> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DMEventDataCopyWith<$Res> {
-  factory $DMEventDataCopyWith(
-          DMEventData value, $Res Function(DMEventData) then) =
-      _$DMEventDataCopyWithImpl<$Res, DMEventData>;
-  @useResult
-  $Res call(
-      {String id,
-      DMEventType eventType,
-      String? text,
-      String? senderId,
-      @JsonKey(name: 'dm_conversation_id') String? conversationId,
-      List<DMReferencedTweet>? referencedTweets,
-      DMAttachments? attachments,
-      DateTime? createdAt});
+abstract mixin class $DMEventDataCopyWith<$Res>  {
+  factory $DMEventDataCopyWith(DMEventData value, $Res Function(DMEventData) _then) = _$DMEventDataCopyWithImpl;
+@useResult
+$Res call({
+ String id, DMEventType eventType, String? text, String? senderId,@JsonKey(name: 'dm_conversation_id') String? conversationId, List<DMReferencedTweet>? referencedTweets, DMAttachments? attachments, DateTime? createdAt
+});
 
-  $DMAttachmentsCopyWith<$Res>? get attachments;
+
+$DMAttachmentsCopyWith<$Res>? get attachments;
+
 }
-
 /// @nodoc
-class _$DMEventDataCopyWithImpl<$Res, $Val extends DMEventData>
+class _$DMEventDataCopyWithImpl<$Res>
     implements $DMEventDataCopyWith<$Res> {
-  _$DMEventDataCopyWithImpl(this._value, this._then);
+  _$DMEventDataCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final DMEventData _self;
+  final $Res Function(DMEventData) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? eventType = null,
-    Object? text = freezed,
-    Object? senderId = freezed,
-    Object? conversationId = freezed,
-    Object? referencedTweets = freezed,
-    Object? attachments = freezed,
-    Object? createdAt = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      eventType: null == eventType
-          ? _value.eventType
-          : eventType // ignore: cast_nullable_to_non_nullable
-              as DMEventType,
-      text: freezed == text
-          ? _value.text
-          : text // ignore: cast_nullable_to_non_nullable
-              as String?,
-      senderId: freezed == senderId
-          ? _value.senderId
-          : senderId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      conversationId: freezed == conversationId
-          ? _value.conversationId
-          : conversationId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      referencedTweets: freezed == referencedTweets
-          ? _value.referencedTweets
-          : referencedTweets // ignore: cast_nullable_to_non_nullable
-              as List<DMReferencedTweet>?,
-      attachments: freezed == attachments
-          ? _value.attachments
-          : attachments // ignore: cast_nullable_to_non_nullable
-              as DMAttachments?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ) as $Val);
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? eventType = null,Object? text = freezed,Object? senderId = freezed,Object? conversationId = freezed,Object? referencedTweets = freezed,Object? attachments = freezed,Object? createdAt = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,eventType: null == eventType ? _self.eventType : eventType // ignore: cast_nullable_to_non_nullable
+as DMEventType,text: freezed == text ? _self.text : text // ignore: cast_nullable_to_non_nullable
+as String?,senderId: freezed == senderId ? _self.senderId : senderId // ignore: cast_nullable_to_non_nullable
+as String?,conversationId: freezed == conversationId ? _self.conversationId : conversationId // ignore: cast_nullable_to_non_nullable
+as String?,referencedTweets: freezed == referencedTweets ? _self.referencedTweets : referencedTweets // ignore: cast_nullable_to_non_nullable
+as List<DMReferencedTweet>?,attachments: freezed == attachments ? _self.attachments : attachments // ignore: cast_nullable_to_non_nullable
+as DMAttachments?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$DMAttachmentsCopyWith<$Res>? get attachments {
+    if (_self.attachments == null) {
+    return null;
   }
 
-  @override
-  @pragma('vm:prefer-inline')
-  $DMAttachmentsCopyWith<$Res>? get attachments {
-    if (_value.attachments == null) {
-      return null;
-    }
-
-    return $DMAttachmentsCopyWith<$Res>(_value.attachments!, (value) {
-      return _then(_value.copyWith(attachments: value) as $Val);
-    });
-  }
+  return $DMAttachmentsCopyWith<$Res>(_self.attachments!, (value) {
+    return _then(_self.copyWith(attachments: value));
+  });
+}
 }
 
-/// @nodoc
-abstract class _$$_DMEventDataCopyWith<$Res>
-    implements $DMEventDataCopyWith<$Res> {
-  factory _$$_DMEventDataCopyWith(
-          _$_DMEventData value, $Res Function(_$_DMEventData) then) =
-      __$$_DMEventDataCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      DMEventType eventType,
-      String? text,
-      String? senderId,
-      @JsonKey(name: 'dm_conversation_id') String? conversationId,
-      List<DMReferencedTweet>? referencedTweets,
-      DMAttachments? attachments,
-      DateTime? createdAt});
 
-  @override
-  $DMAttachmentsCopyWith<$Res>? get attachments;
+/// Adds pattern-matching-related methods to [DMEventData].
+extension DMEventDataPatterns on DMEventData {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _DMEventData value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _DMEventData() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _DMEventData value)  $default,){
+final _that = this;
+switch (_that) {
+case _DMEventData():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _DMEventData value)?  $default,){
+final _that = this;
+switch (_that) {
+case _DMEventData() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  DMEventType eventType,  String? text,  String? senderId, @JsonKey(name: 'dm_conversation_id')  String? conversationId,  List<DMReferencedTweet>? referencedTweets,  DMAttachments? attachments,  DateTime? createdAt)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _DMEventData() when $default != null:
+return $default(_that.id,_that.eventType,_that.text,_that.senderId,_that.conversationId,_that.referencedTweets,_that.attachments,_that.createdAt);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  DMEventType eventType,  String? text,  String? senderId, @JsonKey(name: 'dm_conversation_id')  String? conversationId,  List<DMReferencedTweet>? referencedTweets,  DMAttachments? attachments,  DateTime? createdAt)  $default,) {final _that = this;
+switch (_that) {
+case _DMEventData():
+return $default(_that.id,_that.eventType,_that.text,_that.senderId,_that.conversationId,_that.referencedTweets,_that.attachments,_that.createdAt);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  DMEventType eventType,  String? text,  String? senderId, @JsonKey(name: 'dm_conversation_id')  String? conversationId,  List<DMReferencedTweet>? referencedTweets,  DMAttachments? attachments,  DateTime? createdAt)?  $default,) {final _that = this;
+switch (_that) {
+case _DMEventData() when $default != null:
+return $default(_that.id,_that.eventType,_that.text,_that.senderId,_that.conversationId,_that.referencedTweets,_that.attachments,_that.createdAt);case _:
+  return null;
+
+}
 }
 
-/// @nodoc
-class __$$_DMEventDataCopyWithImpl<$Res>
-    extends _$DMEventDataCopyWithImpl<$Res, _$_DMEventData>
-    implements _$$_DMEventDataCopyWith<$Res> {
-  __$$_DMEventDataCopyWithImpl(
-      _$_DMEventData _value, $Res Function(_$_DMEventData) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? eventType = null,
-    Object? text = freezed,
-    Object? senderId = freezed,
-    Object? conversationId = freezed,
-    Object? referencedTweets = freezed,
-    Object? attachments = freezed,
-    Object? createdAt = freezed,
-  }) {
-    return _then(_$_DMEventData(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      eventType: null == eventType
-          ? _value.eventType
-          : eventType // ignore: cast_nullable_to_non_nullable
-              as DMEventType,
-      text: freezed == text
-          ? _value.text
-          : text // ignore: cast_nullable_to_non_nullable
-              as String?,
-      senderId: freezed == senderId
-          ? _value.senderId
-          : senderId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      conversationId: freezed == conversationId
-          ? _value.conversationId
-          : conversationId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      referencedTweets: freezed == referencedTweets
-          ? _value._referencedTweets
-          : referencedTweets // ignore: cast_nullable_to_non_nullable
-              as List<DMReferencedTweet>?,
-      attachments: freezed == attachments
-          ? _value.attachments
-          : attachments // ignore: cast_nullable_to_non_nullable
-              as DMAttachments?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
 }
 
 /// @nodoc
 
 @JsonSerializable(includeIfNull: false)
-class _$_DMEventData implements _DMEventData {
-  const _$_DMEventData(
-      {required this.id,
-      required this.eventType,
-      this.text,
-      this.senderId,
-      @JsonKey(name: 'dm_conversation_id') this.conversationId,
-      final List<DMReferencedTweet>? referencedTweets,
-      this.attachments,
-      this.createdAt})
-      : _referencedTweets = referencedTweets;
+class _DMEventData implements DMEventData {
+  const _DMEventData({required this.id, required this.eventType, this.text, this.senderId, @JsonKey(name: 'dm_conversation_id') this.conversationId, final  List<DMReferencedTweet>? referencedTweets, this.attachments, this.createdAt}): _referencedTweets = referencedTweets;
+  factory _DMEventData.fromJson(Map<String, dynamic> json) => _$DMEventDataFromJson(json);
 
-  factory _$_DMEventData.fromJson(Map<String, dynamic> json) =>
-      _$$_DMEventDataFromJson(json);
-
-  /// The id of the Direct Message event.
-  @override
-  final String id;
-
-  /// The type of event.
-  @override
-  final DMEventType eventType;
-
-  /// The text included in the Direct Message.
-  @override
-  final String? text;
-
-  /// The id of the user who sent the Direct Message.
-  @override
-  final String? senderId;
-
-  /// The id of the Direct Message to which the event belongs.
-  @override
-  @JsonKey(name: 'dm_conversation_id')
-  final String? conversationId;
-
-  /// Expansion of a "shared" Tweet in the Direct Message.
-  ///
-  /// If the parent Tweet is a Retweet, a Retweet with comment
-  /// (also known as Quoted Tweet) or a Reply, it will include the
-  /// related Tweet referenced to by its parent.
-  final List<DMReferencedTweet>? _referencedTweets;
-
-  /// Expansion of a "shared" Tweet in the Direct Message.
-  ///
-  /// If the parent Tweet is a Retweet, a Retweet with comment
-  /// (also known as Quoted Tweet) or a Reply, it will include the
-  /// related Tweet referenced to by its parent.
-  @override
-  List<DMReferencedTweet>? get referencedTweets {
-    final value = _referencedTweets;
-    if (value == null) return null;
-    if (_referencedTweets is EqualUnmodifiableListView)
-      return _referencedTweets;
-    // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(value);
-  }
-
-  /// The attached urls and media information for expansion.
-  @override
-  final DMAttachments? attachments;
-
-  /// The timestamp of the Direct Message event creation.
-  @override
-  final DateTime? createdAt;
-
-  @override
-  String toString() {
-    return 'DMEventData(id: $id, eventType: $eventType, text: $text, senderId: $senderId, conversationId: $conversationId, referencedTweets: $referencedTweets, attachments: $attachments, createdAt: $createdAt)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_DMEventData &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.eventType, eventType) ||
-                other.eventType == eventType) &&
-            (identical(other.text, text) || other.text == text) &&
-            (identical(other.senderId, senderId) ||
-                other.senderId == senderId) &&
-            (identical(other.conversationId, conversationId) ||
-                other.conversationId == conversationId) &&
-            const DeepCollectionEquality()
-                .equals(other._referencedTweets, _referencedTweets) &&
-            (identical(other.attachments, attachments) ||
-                other.attachments == attachments) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      id,
-      eventType,
-      text,
-      senderId,
-      conversationId,
-      const DeepCollectionEquality().hash(_referencedTweets),
-      attachments,
-      createdAt);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_DMEventDataCopyWith<_$_DMEventData> get copyWith =>
-      __$$_DMEventDataCopyWithImpl<_$_DMEventData>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_DMEventDataToJson(
-      this,
-    );
-  }
+/// The id of the Direct Message event.
+@override final  String id;
+/// The type of event.
+@override final  DMEventType eventType;
+/// The text included in the Direct Message.
+@override final  String? text;
+/// The id of the user who sent the Direct Message.
+@override final  String? senderId;
+/// The id of the Direct Message to which the event belongs.
+@override@JsonKey(name: 'dm_conversation_id') final  String? conversationId;
+/// Expansion of a "shared" Tweet in the Direct Message.
+///
+/// If the parent Tweet is a Retweet, a Retweet with comment
+/// (also known as Quoted Tweet) or a Reply, it will include the
+/// related Tweet referenced to by its parent.
+ final  List<DMReferencedTweet>? _referencedTweets;
+/// Expansion of a "shared" Tweet in the Direct Message.
+///
+/// If the parent Tweet is a Retweet, a Retweet with comment
+/// (also known as Quoted Tweet) or a Reply, it will include the
+/// related Tweet referenced to by its parent.
+@override List<DMReferencedTweet>? get referencedTweets {
+  final value = _referencedTweets;
+  if (value == null) return null;
+  if (_referencedTweets is EqualUnmodifiableListView) return _referencedTweets;
+  // ignore: implicit_dynamic_type
+  return EqualUnmodifiableListView(value);
 }
 
-abstract class _DMEventData implements DMEventData {
-  const factory _DMEventData(
-      {required final String id,
-      required final DMEventType eventType,
-      final String? text,
-      final String? senderId,
-      @JsonKey(name: 'dm_conversation_id') final String? conversationId,
-      final List<DMReferencedTweet>? referencedTweets,
-      final DMAttachments? attachments,
-      final DateTime? createdAt}) = _$_DMEventData;
+/// The attached urls and media information for expansion.
+@override final  DMAttachments? attachments;
+/// The timestamp of the Direct Message event creation.
+@override final  DateTime? createdAt;
 
-  factory _DMEventData.fromJson(Map<String, dynamic> json) =
-      _$_DMEventData.fromJson;
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$DMEventDataCopyWith<_DMEventData> get copyWith => __$DMEventDataCopyWithImpl<_DMEventData>(this, _$identity);
 
-  @override
-
-  /// The id of the Direct Message event.
-  String get id;
-  @override
-
-  /// The type of event.
-  DMEventType get eventType;
-  @override
-
-  /// The text included in the Direct Message.
-  String? get text;
-  @override
-
-  /// The id of the user who sent the Direct Message.
-  String? get senderId;
-  @override
-
-  /// The id of the Direct Message to which the event belongs.
-  @JsonKey(name: 'dm_conversation_id')
-  String? get conversationId;
-  @override
-
-  /// Expansion of a "shared" Tweet in the Direct Message.
-  ///
-  /// If the parent Tweet is a Retweet, a Retweet with comment
-  /// (also known as Quoted Tweet) or a Reply, it will include the
-  /// related Tweet referenced to by its parent.
-  List<DMReferencedTweet>? get referencedTweets;
-  @override
-
-  /// The attached urls and media information for expansion.
-  DMAttachments? get attachments;
-  @override
-
-  /// The timestamp of the Direct Message event creation.
-  DateTime? get createdAt;
-  @override
-  @JsonKey(ignore: true)
-  _$$_DMEventDataCopyWith<_$_DMEventData> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+Map<String, dynamic> toJson() {
+  return _$DMEventDataToJson(this, );
 }
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _DMEventData&&(identical(other.id, id) || other.id == id)&&(identical(other.eventType, eventType) || other.eventType == eventType)&&(identical(other.text, text) || other.text == text)&&(identical(other.senderId, senderId) || other.senderId == senderId)&&(identical(other.conversationId, conversationId) || other.conversationId == conversationId)&&const DeepCollectionEquality().equals(other._referencedTweets, _referencedTweets)&&(identical(other.attachments, attachments) || other.attachments == attachments)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,eventType,text,senderId,conversationId,const DeepCollectionEquality().hash(_referencedTweets),attachments,createdAt);
+
+@override
+String toString() {
+  return 'DMEventData(id: $id, eventType: $eventType, text: $text, senderId: $senderId, conversationId: $conversationId, referencedTweets: $referencedTweets, attachments: $attachments, createdAt: $createdAt)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$DMEventDataCopyWith<$Res> implements $DMEventDataCopyWith<$Res> {
+  factory _$DMEventDataCopyWith(_DMEventData value, $Res Function(_DMEventData) _then) = __$DMEventDataCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, DMEventType eventType, String? text, String? senderId,@JsonKey(name: 'dm_conversation_id') String? conversationId, List<DMReferencedTweet>? referencedTweets, DMAttachments? attachments, DateTime? createdAt
+});
+
+
+@override $DMAttachmentsCopyWith<$Res>? get attachments;
+
+}
+/// @nodoc
+class __$DMEventDataCopyWithImpl<$Res>
+    implements _$DMEventDataCopyWith<$Res> {
+  __$DMEventDataCopyWithImpl(this._self, this._then);
+
+  final _DMEventData _self;
+  final $Res Function(_DMEventData) _then;
+
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? eventType = null,Object? text = freezed,Object? senderId = freezed,Object? conversationId = freezed,Object? referencedTweets = freezed,Object? attachments = freezed,Object? createdAt = freezed,}) {
+  return _then(_DMEventData(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,eventType: null == eventType ? _self.eventType : eventType // ignore: cast_nullable_to_non_nullable
+as DMEventType,text: freezed == text ? _self.text : text // ignore: cast_nullable_to_non_nullable
+as String?,senderId: freezed == senderId ? _self.senderId : senderId // ignore: cast_nullable_to_non_nullable
+as String?,conversationId: freezed == conversationId ? _self.conversationId : conversationId // ignore: cast_nullable_to_non_nullable
+as String?,referencedTweets: freezed == referencedTweets ? _self._referencedTweets : referencedTweets // ignore: cast_nullable_to_non_nullable
+as List<DMReferencedTweet>?,attachments: freezed == attachments ? _self.attachments : attachments // ignore: cast_nullable_to_non_nullable
+as DMAttachments?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+
+/// Create a copy of DMEventData
+/// with the given fields replaced by the non-null parameter values.
+@override
+@pragma('vm:prefer-inline')
+$DMAttachmentsCopyWith<$Res>? get attachments {
+    if (_self.attachments == null) {
+    return null;
+  }
+
+  return $DMAttachmentsCopyWith<$Res>(_self.attachments!, (value) {
+    return _then(_self.copyWith(attachments: value));
+  });
+}
+}
+
+// dart format on

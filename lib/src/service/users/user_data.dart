@@ -31,7 +31,7 @@ part 'user_data.g.dart';
 /// parameter: user.fields when requesting additional fields to complete the
 /// object.
 @freezed
-class UserData with _$UserData implements Data {
+abstract class UserData with _$UserData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory UserData({
     /// The unique identifier of this user.

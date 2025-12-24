@@ -12,7 +12,7 @@ part 'referenced_tweet.freezed.dart';
 part 'referenced_tweet.g.dart';
 
 @freezed
-class ReferencedTweet with _$ReferencedTweet {
+abstract class ReferencedTweet with _$ReferencedTweet {
   const factory ReferencedTweet({
     /// The unique identifier of the referenced Tweet.
     required String id,

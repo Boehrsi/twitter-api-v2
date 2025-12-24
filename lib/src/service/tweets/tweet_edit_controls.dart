@@ -11,7 +11,7 @@ part 'tweet_edit_controls.freezed.dart';
 part 'tweet_edit_controls.g.dart';
 
 @freezed
-class TweetEditControls with _$TweetEditControls {
+abstract class TweetEditControls with _$TweetEditControls {
   const factory TweetEditControls({
     /// A flag indicating whether the tweet is editable or not.
     ///

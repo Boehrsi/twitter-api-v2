@@ -19,7 +19,7 @@ import 'operator/operator.dart';
 class FilteringRuleGroup {
   /// Returns the new instance of [FilteringRuleGroup].
   FilteringRuleGroup([int? samplePercent])
-      : _sample = samplePercent != null ? Sample(samplePercent) : null {
+    : _sample = samplePercent != null ? Sample(samplePercent) : null {
     _entryChannel = EntryChannel(this);
     _logicalChannel = LogicalChannel(this);
     _postLogicalChannel = PostLogicalChannel(this);
@@ -51,17 +51,13 @@ use in nested groups or outside of groups.
   /// Returns the entry channel.
   EntryChannel get entryChannel => _entryChannel;
 
-  LogicalChannel appendOperator(
-    final Operator operator,
-  ) {
+  LogicalChannel appendOperator(final Operator operator) {
     _operators.add(operator);
 
     return _logicalChannel;
   }
 
-  LogicalChannel appendSingletonOperator(
-    final SingletonOperator operator,
-  ) {
+  LogicalChannel appendSingletonOperator(final SingletonOperator operator) {
     for (final $operator in _operators) {
       if (($operator is IsOperator && operator is IsOperator) ||
           ($operator is HasOperator && operator is HasOperator)) {
@@ -76,17 +72,13 @@ use in nested groups or outside of groups.
     return _logicalChannel;
   }
 
-  PostLogicalChannel appendLogicalOperator(
-    final LogicalOperator operator,
-  ) {
+  PostLogicalChannel appendLogicalOperator(final LogicalOperator operator) {
     _operators.add(operator);
 
     return _postLogicalChannel;
   }
 
-  LogicalChannel appendGroup(
-    final Group group,
-  ) {
+  LogicalChannel appendGroup(final Group group) {
     _operators.add(group);
 
     return _logicalChannel;
@@ -96,7 +88,7 @@ use in nested groups or outside of groups.
     if (_sample != null) {
       //! Add sampling rule
       appendLogicalOperator(And());
-      appendSingletonOperator(_sample!);
+      appendSingletonOperator(_sample);
     }
 
     final buffer = StringBuffer();

@@ -9,7 +9,7 @@ part 'public_user_metrics.freezed.dart';
 part 'public_user_metrics.g.dart';
 
 @freezed
-class PublicUserMetrics with _$PublicUserMetrics {
+abstract class PublicUserMetrics with _$PublicUserMetrics {
   const factory PublicUserMetrics({
     /// Number of users who follow this user.
     required int followersCount,

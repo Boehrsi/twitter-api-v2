@@ -8,18 +8,14 @@ part of 'dm_referenced_tweet.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_ReferencedTweet _$$_ReferencedTweetFromJson(Map json) => $checkedCreate(
-      r'_$_ReferencedTweet',
-      json,
-      ($checkedConvert) {
-        final val = _$_ReferencedTweet(
-          id: $checkedConvert('id', (v) => v as String),
-        );
-        return val;
-      },
-    );
+_ReferencedTweet _$ReferencedTweetFromJson(Map json) => $checkedCreate(
+  '_ReferencedTweet',
+  json,
+  ($checkedConvert) {
+    final val = _ReferencedTweet(id: $checkedConvert('id', (v) => v as String));
+    return val;
+  },
+);
 
-Map<String, dynamic> _$$_ReferencedTweetToJson(_$_ReferencedTweet instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-    };
+Map<String, dynamic> _$ReferencedTweetToJson(_ReferencedTweet instance) =>
+    <String, dynamic>{'id': instance.id};

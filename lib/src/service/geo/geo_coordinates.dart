@@ -9,7 +9,7 @@ part 'geo_coordinates.freezed.dart';
 part 'geo_coordinates.g.dart';
 
 @freezed
-class GeoCoordinates with _$GeoCoordinates {
+abstract class GeoCoordinates with _$GeoCoordinates {
   const factory GeoCoordinates({
     /// Describes the type of coordinate. The only value supported at present
     /// is Point.

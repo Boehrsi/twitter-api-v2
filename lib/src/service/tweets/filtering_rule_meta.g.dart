@@ -8,36 +8,27 @@ part of 'filtering_rule_meta.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_FilteringRuleMeta _$$_FilteringRuleMetaFromJson(Map json) => $checkedCreate(
-      r'_$_FilteringRuleMeta',
-      json,
-      ($checkedConvert) {
-        final val = _$_FilteringRuleMeta(
-          sentAt: $checkedConvert(
-              'sent', (v) => v == null ? null : DateTime.parse(v as String)),
-          summary: $checkedConvert(
-              'summary',
-              (v) => v == null
-                  ? null
-                  : FilteringRuleSummary.fromJson(
-                      Map<String, Object?>.from(v as Map))),
-        );
-        return val;
-      },
-      fieldKeyMap: const {'sentAt': 'sent'},
-    );
+_FilteringRuleMeta _$FilteringRuleMetaFromJson(Map json) =>
+    $checkedCreate('_FilteringRuleMeta', json, ($checkedConvert) {
+      final val = _FilteringRuleMeta(
+        sentAt: $checkedConvert(
+          'sent',
+          (v) => v == null ? null : DateTime.parse(v as String),
+        ),
+        summary: $checkedConvert(
+          'summary',
+          (v) => v == null
+              ? null
+              : FilteringRuleSummary.fromJson(
+                  Map<String, Object?>.from(v as Map),
+                ),
+        ),
+      );
+      return val;
+    }, fieldKeyMap: const {'sentAt': 'sent'});
 
-Map<String, dynamic> _$$_FilteringRuleMetaToJson(
-    _$_FilteringRuleMeta instance) {
-  final val = <String, dynamic>{};
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('sent', instance.sentAt?.toIso8601String());
-  writeNotNull('summary', instance.summary?.toJson());
-  return val;
-}
+Map<String, dynamic> _$FilteringRuleMetaToJson(_FilteringRuleMeta instance) =>
+    <String, dynamic>{
+      'sent': ?instance.sentAt?.toIso8601String(),
+      'summary': ?instance.summary?.toJson(),
+    };

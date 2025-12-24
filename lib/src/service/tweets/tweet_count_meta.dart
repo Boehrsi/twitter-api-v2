@@ -14,7 +14,7 @@ part 'tweet_count_meta.freezed.dart';
 part 'tweet_count_meta.g.dart';
 
 @freezed
-class TweetCountMeta with _$TweetCountMeta implements ForwardPageable {
+abstract class TweetCountMeta with _$TweetCountMeta implements ForwardPageable {
   @JsonSerializable(includeIfNull: false)
   const factory TweetCountMeta({
     /// Total count of the Tweets that match the query.

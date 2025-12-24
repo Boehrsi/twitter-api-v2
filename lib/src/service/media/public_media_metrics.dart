@@ -9,7 +9,7 @@ part 'public_media_metrics.freezed.dart';
 part 'public_media_metrics.g.dart';
 
 @freezed
-class PublicMediaMetrics with _$PublicMediaMetrics {
+abstract class PublicMediaMetrics with _$PublicMediaMetrics {
   const factory PublicMediaMetrics({
     /// A count of how many times the video included in the Tweet has been
     /// viewed.

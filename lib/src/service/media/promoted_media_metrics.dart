@@ -11,7 +11,7 @@ part 'promoted_media_metrics.freezed.dart';
 part 'promoted_media_metrics.g.dart';
 
 @freezed
-class PromotedMediaMetrics with _$PromotedMediaMetrics {
+abstract class PromotedMediaMetrics with _$PromotedMediaMetrics {
   const factory PromotedMediaMetrics({
     /// The number of users who played through to each quartile in a video.
     ///

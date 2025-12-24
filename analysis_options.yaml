@@ -38,7 +38,6 @@ linter:
     - library_prefixes
     - non_constant_identifier_names
     - overridden_fields
-    - package_api_docs
     - package_names
     - package_prefixed_library_names
     - prefer_final_fields

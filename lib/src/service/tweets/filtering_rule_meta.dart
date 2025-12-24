@@ -15,7 +15,7 @@ part 'filtering_rule_meta.freezed.dart';
 part 'filtering_rule_meta.g.dart';
 
 @freezed
-class FilteringRuleMeta with _$FilteringRuleMeta implements Meta {
+abstract class FilteringRuleMeta with _$FilteringRuleMeta implements Meta {
   @JsonSerializable(includeIfNull: false)
   const factory FilteringRuleMeta({
     /// The time when the request body was returned.

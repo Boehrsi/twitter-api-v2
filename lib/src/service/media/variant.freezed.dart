@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,198 +9,285 @@ part of 'variant.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-Variant _$VariantFromJson(Map<String, dynamic> json) {
-  return _Variant.fromJson(json);
-}
 
 /// @nodoc
 mixin _$Variant {
-  /// The number of bit rates in the content.
-  ///
-  /// It may be null when content type is `application/x-mpegURL`.
-  int? get bitRate => throw _privateConstructorUsedError;
 
-  /// The content type.
-  String get contentType => throw _privateConstructorUsedError;
+/// The number of bit rates in the content.
+///
+/// It may be null when content type is `application/x-mpegURL`.
+ int? get bitRate;/// The content type.
+ String get contentType;/// The url to the content.
+ String get url;
+/// Create a copy of Variant
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$VariantCopyWith<Variant> get copyWith => _$VariantCopyWithImpl<Variant>(this as Variant, _$identity);
 
-  /// The url to the content.
-  String get url => throw _privateConstructorUsedError;
+  /// Serializes this Variant to a JSON map.
+  Map<String, dynamic> toJson();
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $VariantCopyWith<Variant> get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Variant&&(identical(other.bitRate, bitRate) || other.bitRate == bitRate)&&(identical(other.contentType, contentType) || other.contentType == contentType)&&(identical(other.url, url) || other.url == url));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,bitRate,contentType,url);
+
+@override
+String toString() {
+  return 'Variant(bitRate: $bitRate, contentType: $contentType, url: $url)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $VariantCopyWith<$Res> {
-  factory $VariantCopyWith(Variant value, $Res Function(Variant) then) =
-      _$VariantCopyWithImpl<$Res, Variant>;
-  @useResult
-  $Res call({int? bitRate, String contentType, String url});
-}
+abstract mixin class $VariantCopyWith<$Res>  {
+  factory $VariantCopyWith(Variant value, $Res Function(Variant) _then) = _$VariantCopyWithImpl;
+@useResult
+$Res call({
+ int? bitRate, String contentType, String url
+});
 
+
+
+
+}
 /// @nodoc
-class _$VariantCopyWithImpl<$Res, $Val extends Variant>
+class _$VariantCopyWithImpl<$Res>
     implements $VariantCopyWith<$Res> {
-  _$VariantCopyWithImpl(this._value, this._then);
+  _$VariantCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Variant _self;
+  final $Res Function(Variant) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? bitRate = freezed,
-    Object? contentType = null,
-    Object? url = null,
-  }) {
-    return _then(_value.copyWith(
-      bitRate: freezed == bitRate
-          ? _value.bitRate
-          : bitRate // ignore: cast_nullable_to_non_nullable
-              as int?,
-      contentType: null == contentType
-          ? _value.contentType
-          : contentType // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of Variant
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? bitRate = freezed,Object? contentType = null,Object? url = null,}) {
+  return _then(_self.copyWith(
+bitRate: freezed == bitRate ? _self.bitRate : bitRate // ignore: cast_nullable_to_non_nullable
+as int?,contentType: null == contentType ? _self.contentType : contentType // ignore: cast_nullable_to_non_nullable
+as String,url: null == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_VariantCopyWith<$Res> implements $VariantCopyWith<$Res> {
-  factory _$$_VariantCopyWith(
-          _$_Variant value, $Res Function(_$_Variant) then) =
-      __$$_VariantCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int? bitRate, String contentType, String url});
 }
 
-/// @nodoc
-class __$$_VariantCopyWithImpl<$Res>
-    extends _$VariantCopyWithImpl<$Res, _$_Variant>
-    implements _$$_VariantCopyWith<$Res> {
-  __$$_VariantCopyWithImpl(_$_Variant _value, $Res Function(_$_Variant) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? bitRate = freezed,
-    Object? contentType = null,
-    Object? url = null,
-  }) {
-    return _then(_$_Variant(
-      bitRate: freezed == bitRate
-          ? _value.bitRate
-          : bitRate // ignore: cast_nullable_to_non_nullable
-              as int?,
-      contentType: null == contentType
-          ? _value.contentType
-          : contentType // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: null == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [Variant].
+extension VariantPatterns on Variant {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Variant value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Variant() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Variant value)  $default,){
+final _that = this;
+switch (_that) {
+case _Variant():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Variant value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Variant() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? bitRate,  String contentType,  String url)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Variant() when $default != null:
+return $default(_that.bitRate,_that.contentType,_that.url);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? bitRate,  String contentType,  String url)  $default,) {final _that = this;
+switch (_that) {
+case _Variant():
+return $default(_that.bitRate,_that.contentType,_that.url);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? bitRate,  String contentType,  String url)?  $default,) {final _that = this;
+switch (_that) {
+case _Variant() when $default != null:
+return $default(_that.bitRate,_that.contentType,_that.url);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 
 @JsonSerializable(includeIfNull: false)
-class _$_Variant implements _Variant {
-  const _$_Variant(
-      {this.bitRate, required this.contentType, required this.url});
+class _Variant implements Variant {
+  const _Variant({this.bitRate, required this.contentType, required this.url});
+  factory _Variant.fromJson(Map<String, dynamic> json) => _$VariantFromJson(json);
 
-  factory _$_Variant.fromJson(Map<String, dynamic> json) =>
-      _$$_VariantFromJson(json);
+/// The number of bit rates in the content.
+///
+/// It may be null when content type is `application/x-mpegURL`.
+@override final  int? bitRate;
+/// The content type.
+@override final  String contentType;
+/// The url to the content.
+@override final  String url;
 
-  /// The number of bit rates in the content.
-  ///
-  /// It may be null when content type is `application/x-mpegURL`.
-  @override
-  final int? bitRate;
+/// Create a copy of Variant
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$VariantCopyWith<_Variant> get copyWith => __$VariantCopyWithImpl<_Variant>(this, _$identity);
 
-  /// The content type.
-  @override
-  final String contentType;
-
-  /// The url to the content.
-  @override
-  final String url;
-
-  @override
-  String toString() {
-    return 'Variant(bitRate: $bitRate, contentType: $contentType, url: $url)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Variant &&
-            (identical(other.bitRate, bitRate) || other.bitRate == bitRate) &&
-            (identical(other.contentType, contentType) ||
-                other.contentType == contentType) &&
-            (identical(other.url, url) || other.url == url));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, bitRate, contentType, url);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_VariantCopyWith<_$_Variant> get copyWith =>
-      __$$_VariantCopyWithImpl<_$_Variant>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_VariantToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$VariantToJson(this, );
 }
 
-abstract class _Variant implements Variant {
-  const factory _Variant(
-      {final int? bitRate,
-      required final String contentType,
-      required final String url}) = _$_Variant;
-
-  factory _Variant.fromJson(Map<String, dynamic> json) = _$_Variant.fromJson;
-
-  @override
-
-  /// The number of bit rates in the content.
-  ///
-  /// It may be null when content type is `application/x-mpegURL`.
-  int? get bitRate;
-  @override
-
-  /// The content type.
-  String get contentType;
-  @override
-
-  /// The url to the content.
-  String get url;
-  @override
-  @JsonKey(ignore: true)
-  _$$_VariantCopyWith<_$_Variant> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Variant&&(identical(other.bitRate, bitRate) || other.bitRate == bitRate)&&(identical(other.contentType, contentType) || other.contentType == contentType)&&(identical(other.url, url) || other.url == url));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,bitRate,contentType,url);
+
+@override
+String toString() {
+  return 'Variant(bitRate: $bitRate, contentType: $contentType, url: $url)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$VariantCopyWith<$Res> implements $VariantCopyWith<$Res> {
+  factory _$VariantCopyWith(_Variant value, $Res Function(_Variant) _then) = __$VariantCopyWithImpl;
+@override @useResult
+$Res call({
+ int? bitRate, String contentType, String url
+});
+
+
+
+
+}
+/// @nodoc
+class __$VariantCopyWithImpl<$Res>
+    implements _$VariantCopyWith<$Res> {
+  __$VariantCopyWithImpl(this._self, this._then);
+
+  final _Variant _self;
+  final $Res Function(_Variant) _then;
+
+/// Create a copy of Variant
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? bitRate = freezed,Object? contentType = null,Object? url = null,}) {
+  return _then(_Variant(
+bitRate: freezed == bitRate ? _self.bitRate : bitRate // ignore: cast_nullable_to_non_nullable
+as int?,contentType: null == contentType ? _self.contentType : contentType // ignore: cast_nullable_to_non_nullable
+as String,url: null == url ? _self.url : url // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+// dart format on

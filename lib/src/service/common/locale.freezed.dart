@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,165 +9,276 @@ part of 'locale.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-Locale _$LocaleFromJson(Map<String, dynamic> json) {
-  return _Locale.fromJson(json);
-}
 
 /// @nodoc
 mixin _$Locale {
-  /// The language
-  Language get lang => throw _privateConstructorUsedError;
 
-  /// The country
-  Country get country => throw _privateConstructorUsedError;
+/// The language
+ Language get lang;/// The country
+ Country get country;
+/// Create a copy of Locale
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$LocaleCopyWith<Locale> get copyWith => _$LocaleCopyWithImpl<Locale>(this as Locale, _$identity);
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $LocaleCopyWith<Locale> get copyWith => throw _privateConstructorUsedError;
+  /// Serializes this Locale to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Locale&&(identical(other.lang, lang) || other.lang == lang)&&(identical(other.country, country) || other.country == country));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,lang,country);
+
+@override
+String toString() {
+  return 'Locale(lang: $lang, country: $country)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $LocaleCopyWith<$Res> {
-  factory $LocaleCopyWith(Locale value, $Res Function(Locale) then) =
-      _$LocaleCopyWithImpl<$Res, Locale>;
-  @useResult
-  $Res call({Language lang, Country country});
-}
+abstract mixin class $LocaleCopyWith<$Res>  {
+  factory $LocaleCopyWith(Locale value, $Res Function(Locale) _then) = _$LocaleCopyWithImpl;
+@useResult
+$Res call({
+ Language lang, Country country
+});
 
+
+
+
+}
 /// @nodoc
-class _$LocaleCopyWithImpl<$Res, $Val extends Locale>
+class _$LocaleCopyWithImpl<$Res>
     implements $LocaleCopyWith<$Res> {
-  _$LocaleCopyWithImpl(this._value, this._then);
+  _$LocaleCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Locale _self;
+  final $Res Function(Locale) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? lang = null,
-    Object? country = null,
-  }) {
-    return _then(_value.copyWith(
-      lang: null == lang
-          ? _value.lang
-          : lang // ignore: cast_nullable_to_non_nullable
-              as Language,
-      country: null == country
-          ? _value.country
-          : country // ignore: cast_nullable_to_non_nullable
-              as Country,
-    ) as $Val);
-  }
+/// Create a copy of Locale
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? lang = null,Object? country = null,}) {
+  return _then(_self.copyWith(
+lang: null == lang ? _self.lang : lang // ignore: cast_nullable_to_non_nullable
+as Language,country: null == country ? _self.country : country // ignore: cast_nullable_to_non_nullable
+as Country,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_LocaleCopyWith<$Res> implements $LocaleCopyWith<$Res> {
-  factory _$$_LocaleCopyWith(_$_Locale value, $Res Function(_$_Locale) then) =
-      __$$_LocaleCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({Language lang, Country country});
 }
 
-/// @nodoc
-class __$$_LocaleCopyWithImpl<$Res>
-    extends _$LocaleCopyWithImpl<$Res, _$_Locale>
-    implements _$$_LocaleCopyWith<$Res> {
-  __$$_LocaleCopyWithImpl(_$_Locale _value, $Res Function(_$_Locale) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? lang = null,
-    Object? country = null,
-  }) {
-    return _then(_$_Locale(
-      lang: null == lang
-          ? _value.lang
-          : lang // ignore: cast_nullable_to_non_nullable
-              as Language,
-      country: null == country
-          ? _value.country
-          : country // ignore: cast_nullable_to_non_nullable
-              as Country,
-    ));
-  }
+/// Adds pattern-matching-related methods to [Locale].
+extension LocalePatterns on Locale {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _Locale value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _Locale() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _Locale value)  $default,){
+final _that = this;
+switch (_that) {
+case _Locale():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _Locale value)?  $default,){
+final _that = this;
+switch (_that) {
+case _Locale() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( Language lang,  Country country)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _Locale() when $default != null:
+return $default(_that.lang,_that.country);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( Language lang,  Country country)  $default,) {final _that = this;
+switch (_that) {
+case _Locale():
+return $default(_that.lang,_that.country);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( Language lang,  Country country)?  $default,) {final _that = this;
+switch (_that) {
+case _Locale() when $default != null:
+return $default(_that.lang,_that.country);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_Locale implements _Locale {
-  const _$_Locale({required this.lang, required this.country});
 
-  factory _$_Locale.fromJson(Map<String, dynamic> json) =>
-      _$$_LocaleFromJson(json);
+class _Locale implements Locale {
+  const _Locale({required this.lang, required this.country});
+  factory _Locale.fromJson(Map<String, dynamic> json) => _$LocaleFromJson(json);
 
-  /// The language
-  @override
-  final Language lang;
+/// The language
+@override final  Language lang;
+/// The country
+@override final  Country country;
 
-  /// The country
-  @override
-  final Country country;
+/// Create a copy of Locale
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$LocaleCopyWith<_Locale> get copyWith => __$LocaleCopyWithImpl<_Locale>(this, _$identity);
 
-  @override
-  String toString() {
-    return 'Locale(lang: $lang, country: $country)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_Locale &&
-            (identical(other.lang, lang) || other.lang == lang) &&
-            (identical(other.country, country) || other.country == country));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, lang, country);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_LocaleCopyWith<_$_Locale> get copyWith =>
-      __$$_LocaleCopyWithImpl<_$_Locale>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_LocaleToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$LocaleToJson(this, );
 }
 
-abstract class _Locale implements Locale {
-  const factory _Locale(
-      {required final Language lang,
-      required final Country country}) = _$_Locale;
-
-  factory _Locale.fromJson(Map<String, dynamic> json) = _$_Locale.fromJson;
-
-  @override
-
-  /// The language
-  Language get lang;
-  @override
-
-  /// The country
-  Country get country;
-  @override
-  @JsonKey(ignore: true)
-  _$$_LocaleCopyWith<_$_Locale> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Locale&&(identical(other.lang, lang) || other.lang == lang)&&(identical(other.country, country) || other.country == country));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,lang,country);
+
+@override
+String toString() {
+  return 'Locale(lang: $lang, country: $country)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$LocaleCopyWith<$Res> implements $LocaleCopyWith<$Res> {
+  factory _$LocaleCopyWith(_Locale value, $Res Function(_Locale) _then) = __$LocaleCopyWithImpl;
+@override @useResult
+$Res call({
+ Language lang, Country country
+});
+
+
+
+
+}
+/// @nodoc
+class __$LocaleCopyWithImpl<$Res>
+    implements _$LocaleCopyWith<$Res> {
+  __$LocaleCopyWithImpl(this._self, this._then);
+
+  final _Locale _self;
+  final $Res Function(_Locale) _then;
+
+/// Create a copy of Locale
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? lang = null,Object? country = null,}) {
+  return _then(_Locale(
+lang: null == lang ? _self.lang : lang // ignore: cast_nullable_to_non_nullable
+as Language,country: null == country ? _self.country : country // ignore: cast_nullable_to_non_nullable
+as Country,
+  ));
+}
+
+
+}
+
+// dart format on

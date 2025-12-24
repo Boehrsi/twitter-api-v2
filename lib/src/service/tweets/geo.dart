@@ -14,7 +14,7 @@ part 'geo.freezed.dart';
 part 'geo.g.dart';
 
 @freezed
-class Geo with _$Geo {
+abstract class Geo with _$Geo {
   @JsonSerializable(includeIfNull: false)
   const factory Geo({
     /// The unique identifier of the place, if this is a point of interest

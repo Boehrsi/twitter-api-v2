@@ -9,7 +9,7 @@ part 'tag.freezed.dart';
 part 'tag.g.dart';
 
 @freezed
-class Tag with _$Tag {
+abstract class Tag with _$Tag {
   const factory Tag({
     /// The start position (zero-based) of the recognized tag within the object.
     /// All start indices are inclusive.

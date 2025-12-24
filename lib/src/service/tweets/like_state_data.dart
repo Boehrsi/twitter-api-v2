@@ -14,7 +14,7 @@ part 'like_state_data.freezed.dart';
 part 'like_state_data.g.dart';
 
 @freezed
-class LikeStateData with _$LikeStateData implements Data {
+abstract class LikeStateData with _$LikeStateData implements Data {
   const factory LikeStateData({
     /// Indicates whether the user likes the specified Tweet
     /// as a result of this request.

@@ -11,7 +11,7 @@ part 'private_tweet_metrics.freezed.dart';
 part 'private_tweet_metrics.g.dart';
 
 @freezed
-class PrivateTweetMetrics with _$PrivateTweetMetrics {
+abstract class PrivateTweetMetrics with _$PrivateTweetMetrics {
   @JsonSerializable(includeIfNull: false)
   const factory PrivateTweetMetrics({
     /// A count of how many times the Tweet has been viewed

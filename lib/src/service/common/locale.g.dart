@@ -8,24 +8,22 @@ part of 'locale.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_Locale _$$_LocaleFromJson(Map json) => $checkedCreate(
-      r'_$_Locale',
-      json,
-      ($checkedConvert) {
-        final val = _$_Locale(
-          lang:
-              $checkedConvert('lang', (v) => $enumDecode(_$LanguageEnumMap, v)),
-          country: $checkedConvert(
-              'country', (v) => $enumDecode(_$CountryEnumMap, v)),
-        );
-        return val;
-      },
-    );
+_Locale _$LocaleFromJson(Map json) =>
+    $checkedCreate('_Locale', json, ($checkedConvert) {
+      final val = _Locale(
+        lang: $checkedConvert('lang', (v) => $enumDecode(_$LanguageEnumMap, v)),
+        country: $checkedConvert(
+          'country',
+          (v) => $enumDecode(_$CountryEnumMap, v),
+        ),
+      );
+      return val;
+    });
 
-Map<String, dynamic> _$$_LocaleToJson(_$_Locale instance) => <String, dynamic>{
-      'lang': _$LanguageEnumMap[instance.lang]!,
-      'country': _$CountryEnumMap[instance.country]!,
-    };
+Map<String, dynamic> _$LocaleToJson(_Locale instance) => <String, dynamic>{
+  'lang': _$LanguageEnumMap[instance.lang]!,
+  'country': _$CountryEnumMap[instance.country]!,
+};
 
 const _$LanguageEnumMap = {
   Language.amharic: 'am',

@@ -14,7 +14,7 @@ part 'reply_state_data.freezed.dart';
 part 'reply_state_data.g.dart';
 
 @freezed
-class ReplyStateData with _$ReplyStateData implements Data {
+abstract class ReplyStateData with _$ReplyStateData implements Data {
   const factory ReplyStateData({
     /// Indicates if the Tweet was successfully hidden or unhidden.
     @JsonKey(name: 'hidden') required bool isHidden,

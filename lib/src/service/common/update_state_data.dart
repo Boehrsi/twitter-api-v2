@@ -14,7 +14,7 @@ part 'update_state_data.freezed.dart';
 part 'update_state_data.g.dart';
 
 @freezed
-class UpdateStateData with _$UpdateStateData implements Data {
+abstract class UpdateStateData with _$UpdateStateData implements Data {
   const factory UpdateStateData({
     /// Indicates whether the content specified in the request has been updated.
     @JsonKey(name: 'updated') required bool isUpdated,

@@ -32,7 +32,7 @@ part 'space_data.g.dart';
 /// The Spaces lookup endpoints can help you ensure you respect the users’
 /// expectations and intent.
 @freezed
-class SpaceData with _$SpaceData implements Data {
+abstract class SpaceData with _$SpaceData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory SpaceData({
     /// The unique identifier of the requested Space.

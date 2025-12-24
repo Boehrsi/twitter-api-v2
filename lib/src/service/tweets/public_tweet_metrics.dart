@@ -9,7 +9,7 @@ part 'public_tweet_metrics.freezed.dart';
 part 'public_tweet_metrics.g.dart';
 
 @freezed
-class PublicTweetMetrics with _$PublicTweetMetrics {
+abstract class PublicTweetMetrics with _$PublicTweetMetrics {
   const factory PublicTweetMetrics({
     /// Number of Likes of this Tweet.
     required int likeCount,

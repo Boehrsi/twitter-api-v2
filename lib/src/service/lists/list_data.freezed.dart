@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,385 +9,336 @@ part of 'list_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-ListData _$ListDataFromJson(Map<String, dynamic> json) {
-  return _ListData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$ListData {
-  /// The unique identifier of this List.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Use this to programmatically retrieve information about a specific
-  ///   Twitter List.
-  String get id => throw _privateConstructorUsedError;
 
-  /// The name of the List, as defined when creating the List.
-  String get name => throw _privateConstructorUsedError;
+/// The unique identifier of this List.
+///
+/// ## How It Can Be Used
+///
+/// - Use this to programmatically retrieve information about a specific
+///   Twitter List.
+ String get id;/// The name of the List, as defined when creating the List.
+ String get name;/// A brief description to let users know about the List.
+ String? get description;/// Unique identifier of this List's owner.
+///
+/// ## How It Can Be Used
+///
+/// - Returns the List owner ID. Can potentially be used to find out if
+///   this specific user owns any other Lists. Can also be used to expand
+///   user objects.
+ String? get ownerId;/// Shows how many users follow this List.
+ int? get followerCount;/// Shows how many members are part of this List.
+ int? get memberCount;/// Indicates if the List is private.
+@JsonKey(name: 'private') bool? get isPrivate;/// The UTC date time that the List was created on Twitter.
+///
+/// ## How It Can Be Used
+///
+/// - Can be used to determine how long a List has been on Twitter.
+ DateTime? get createdAt;
+/// Create a copy of ListData
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$ListDataCopyWith<ListData> get copyWith => _$ListDataCopyWithImpl<ListData>(this as ListData, _$identity);
 
-  /// A brief description to let users know about the List.
-  String? get description => throw _privateConstructorUsedError;
+  /// Serializes this ListData to a JSON map.
+  Map<String, dynamic> toJson();
 
-  /// Unique identifier of this List's owner.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Returns the List owner ID. Can potentially be used to find out if
-  ///   this specific user owns any other Lists. Can also be used to expand
-  ///   user objects.
-  String? get ownerId => throw _privateConstructorUsedError;
 
-  /// Shows how many users follow this List.
-  int? get followerCount => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is ListData&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.followerCount, followerCount) || other.followerCount == followerCount)&&(identical(other.memberCount, memberCount) || other.memberCount == memberCount)&&(identical(other.isPrivate, isPrivate) || other.isPrivate == isPrivate)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
+}
 
-  /// Shows how many members are part of this List.
-  int? get memberCount => throw _privateConstructorUsedError;
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,ownerId,followerCount,memberCount,isPrivate,createdAt);
 
-  /// Indicates if the List is private.
-  @JsonKey(name: 'private')
-  bool? get isPrivate => throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'ListData(id: $id, name: $name, description: $description, ownerId: $ownerId, followerCount: $followerCount, memberCount: $memberCount, isPrivate: $isPrivate, createdAt: $createdAt)';
+}
 
-  /// The UTC date time that the List was created on Twitter.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Can be used to determine how long a List has been on Twitter.
-  DateTime? get createdAt => throw _privateConstructorUsedError;
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $ListDataCopyWith<ListData> get copyWith =>
-      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ListDataCopyWith<$Res> {
-  factory $ListDataCopyWith(ListData value, $Res Function(ListData) then) =
-      _$ListDataCopyWithImpl<$Res, ListData>;
-  @useResult
-  $Res call(
-      {String id,
-      String name,
-      String? description,
-      String? ownerId,
-      int? followerCount,
-      int? memberCount,
-      @JsonKey(name: 'private') bool? isPrivate,
-      DateTime? createdAt});
-}
+abstract mixin class $ListDataCopyWith<$Res>  {
+  factory $ListDataCopyWith(ListData value, $Res Function(ListData) _then) = _$ListDataCopyWithImpl;
+@useResult
+$Res call({
+ String id, String name, String? description, String? ownerId, int? followerCount, int? memberCount,@JsonKey(name: 'private') bool? isPrivate, DateTime? createdAt
+});
 
+
+
+
+}
 /// @nodoc
-class _$ListDataCopyWithImpl<$Res, $Val extends ListData>
+class _$ListDataCopyWithImpl<$Res>
     implements $ListDataCopyWith<$Res> {
-  _$ListDataCopyWithImpl(this._value, this._then);
+  _$ListDataCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final ListData _self;
+  final $Res Function(ListData) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? description = freezed,
-    Object? ownerId = freezed,
-    Object? followerCount = freezed,
-    Object? memberCount = freezed,
-    Object? isPrivate = freezed,
-    Object? createdAt = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      ownerId: freezed == ownerId
-          ? _value.ownerId
-          : ownerId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      followerCount: freezed == followerCount
-          ? _value.followerCount
-          : followerCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      memberCount: freezed == memberCount
-          ? _value.memberCount
-          : memberCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      isPrivate: freezed == isPrivate
-          ? _value.isPrivate
-          : isPrivate // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ) as $Val);
-  }
+/// Create a copy of ListData
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? description = freezed,Object? ownerId = freezed,Object? followerCount = freezed,Object? memberCount = freezed,Object? isPrivate = freezed,Object? createdAt = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,ownerId: freezed == ownerId ? _self.ownerId : ownerId // ignore: cast_nullable_to_non_nullable
+as String?,followerCount: freezed == followerCount ? _self.followerCount : followerCount // ignore: cast_nullable_to_non_nullable
+as int?,memberCount: freezed == memberCount ? _self.memberCount : memberCount // ignore: cast_nullable_to_non_nullable
+as int?,isPrivate: freezed == isPrivate ? _self.isPrivate : isPrivate // ignore: cast_nullable_to_non_nullable
+as bool?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_ListDataCopyWith<$Res> implements $ListDataCopyWith<$Res> {
-  factory _$$_ListDataCopyWith(
-          _$_ListData value, $Res Function(_$_ListData) then) =
-      __$$_ListDataCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {String id,
-      String name,
-      String? description,
-      String? ownerId,
-      int? followerCount,
-      int? memberCount,
-      @JsonKey(name: 'private') bool? isPrivate,
-      DateTime? createdAt});
 }
 
-/// @nodoc
-class __$$_ListDataCopyWithImpl<$Res>
-    extends _$ListDataCopyWithImpl<$Res, _$_ListData>
-    implements _$$_ListDataCopyWith<$Res> {
-  __$$_ListDataCopyWithImpl(
-      _$_ListData _value, $Res Function(_$_ListData) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? name = null,
-    Object? description = freezed,
-    Object? ownerId = freezed,
-    Object? followerCount = freezed,
-    Object? memberCount = freezed,
-    Object? isPrivate = freezed,
-    Object? createdAt = freezed,
-  }) {
-    return _then(_$_ListData(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      name: null == name
-          ? _value.name
-          : name // ignore: cast_nullable_to_non_nullable
-              as String,
-      description: freezed == description
-          ? _value.description
-          : description // ignore: cast_nullable_to_non_nullable
-              as String?,
-      ownerId: freezed == ownerId
-          ? _value.ownerId
-          : ownerId // ignore: cast_nullable_to_non_nullable
-              as String?,
-      followerCount: freezed == followerCount
-          ? _value.followerCount
-          : followerCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      memberCount: freezed == memberCount
-          ? _value.memberCount
-          : memberCount // ignore: cast_nullable_to_non_nullable
-              as int?,
-      isPrivate: freezed == isPrivate
-          ? _value.isPrivate
-          : isPrivate // ignore: cast_nullable_to_non_nullable
-              as bool?,
-      createdAt: freezed == createdAt
-          ? _value.createdAt
-          : createdAt // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [ListData].
+extension ListDataPatterns on ListData {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _ListData value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _ListData() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _ListData value)  $default,){
+final _that = this;
+switch (_that) {
+case _ListData():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _ListData value)?  $default,){
+final _that = this;
+switch (_that) {
+case _ListData() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String name,  String? description,  String? ownerId,  int? followerCount,  int? memberCount, @JsonKey(name: 'private')  bool? isPrivate,  DateTime? createdAt)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _ListData() when $default != null:
+return $default(_that.id,_that.name,_that.description,_that.ownerId,_that.followerCount,_that.memberCount,_that.isPrivate,_that.createdAt);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String name,  String? description,  String? ownerId,  int? followerCount,  int? memberCount, @JsonKey(name: 'private')  bool? isPrivate,  DateTime? createdAt)  $default,) {final _that = this;
+switch (_that) {
+case _ListData():
+return $default(_that.id,_that.name,_that.description,_that.ownerId,_that.followerCount,_that.memberCount,_that.isPrivate,_that.createdAt);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String name,  String? description,  String? ownerId,  int? followerCount,  int? memberCount, @JsonKey(name: 'private')  bool? isPrivate,  DateTime? createdAt)?  $default,) {final _that = this;
+switch (_that) {
+case _ListData() when $default != null:
+return $default(_that.id,_that.name,_that.description,_that.ownerId,_that.followerCount,_that.memberCount,_that.isPrivate,_that.createdAt);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 
 @JsonSerializable(includeIfNull: false)
-class _$_ListData implements _ListData {
-  const _$_ListData(
-      {required this.id,
-      required this.name,
-      this.description,
-      this.ownerId,
-      this.followerCount,
-      this.memberCount,
-      @JsonKey(name: 'private') this.isPrivate,
-      this.createdAt});
+class _ListData implements ListData {
+  const _ListData({required this.id, required this.name, this.description, this.ownerId, this.followerCount, this.memberCount, @JsonKey(name: 'private') this.isPrivate, this.createdAt});
+  factory _ListData.fromJson(Map<String, dynamic> json) => _$ListDataFromJson(json);
 
-  factory _$_ListData.fromJson(Map<String, dynamic> json) =>
-      _$$_ListDataFromJson(json);
+/// The unique identifier of this List.
+///
+/// ## How It Can Be Used
+///
+/// - Use this to programmatically retrieve information about a specific
+///   Twitter List.
+@override final  String id;
+/// The name of the List, as defined when creating the List.
+@override final  String name;
+/// A brief description to let users know about the List.
+@override final  String? description;
+/// Unique identifier of this List's owner.
+///
+/// ## How It Can Be Used
+///
+/// - Returns the List owner ID. Can potentially be used to find out if
+///   this specific user owns any other Lists. Can also be used to expand
+///   user objects.
+@override final  String? ownerId;
+/// Shows how many users follow this List.
+@override final  int? followerCount;
+/// Shows how many members are part of this List.
+@override final  int? memberCount;
+/// Indicates if the List is private.
+@override@JsonKey(name: 'private') final  bool? isPrivate;
+/// The UTC date time that the List was created on Twitter.
+///
+/// ## How It Can Be Used
+///
+/// - Can be used to determine how long a List has been on Twitter.
+@override final  DateTime? createdAt;
 
-  /// The unique identifier of this List.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Use this to programmatically retrieve information about a specific
-  ///   Twitter List.
-  @override
-  final String id;
+/// Create a copy of ListData
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ListDataCopyWith<_ListData> get copyWith => __$ListDataCopyWithImpl<_ListData>(this, _$identity);
 
-  /// The name of the List, as defined when creating the List.
-  @override
-  final String name;
-
-  /// A brief description to let users know about the List.
-  @override
-  final String? description;
-
-  /// Unique identifier of this List's owner.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Returns the List owner ID. Can potentially be used to find out if
-  ///   this specific user owns any other Lists. Can also be used to expand
-  ///   user objects.
-  @override
-  final String? ownerId;
-
-  /// Shows how many users follow this List.
-  @override
-  final int? followerCount;
-
-  /// Shows how many members are part of this List.
-  @override
-  final int? memberCount;
-
-  /// Indicates if the List is private.
-  @override
-  @JsonKey(name: 'private')
-  final bool? isPrivate;
-
-  /// The UTC date time that the List was created on Twitter.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Can be used to determine how long a List has been on Twitter.
-  @override
-  final DateTime? createdAt;
-
-  @override
-  String toString() {
-    return 'ListData(id: $id, name: $name, description: $description, ownerId: $ownerId, followerCount: $followerCount, memberCount: $memberCount, isPrivate: $isPrivate, createdAt: $createdAt)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_ListData &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.ownerId, ownerId) || other.ownerId == ownerId) &&
-            (identical(other.followerCount, followerCount) ||
-                other.followerCount == followerCount) &&
-            (identical(other.memberCount, memberCount) ||
-                other.memberCount == memberCount) &&
-            (identical(other.isPrivate, isPrivate) ||
-                other.isPrivate == isPrivate) &&
-            (identical(other.createdAt, createdAt) ||
-                other.createdAt == createdAt));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, name, description, ownerId,
-      followerCount, memberCount, isPrivate, createdAt);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_ListDataCopyWith<_$_ListData> get copyWith =>
-      __$$_ListDataCopyWithImpl<_$_ListData>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_ListDataToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$ListDataToJson(this, );
 }
 
-abstract class _ListData implements ListData {
-  const factory _ListData(
-      {required final String id,
-      required final String name,
-      final String? description,
-      final String? ownerId,
-      final int? followerCount,
-      final int? memberCount,
-      @JsonKey(name: 'private') final bool? isPrivate,
-      final DateTime? createdAt}) = _$_ListData;
-
-  factory _ListData.fromJson(Map<String, dynamic> json) = _$_ListData.fromJson;
-
-  @override
-
-  /// The unique identifier of this List.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Use this to programmatically retrieve information about a specific
-  ///   Twitter List.
-  String get id;
-  @override
-
-  /// The name of the List, as defined when creating the List.
-  String get name;
-  @override
-
-  /// A brief description to let users know about the List.
-  String? get description;
-  @override
-
-  /// Unique identifier of this List's owner.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Returns the List owner ID. Can potentially be used to find out if
-  ///   this specific user owns any other Lists. Can also be used to expand
-  ///   user objects.
-  String? get ownerId;
-  @override
-
-  /// Shows how many users follow this List.
-  int? get followerCount;
-  @override
-
-  /// Shows how many members are part of this List.
-  int? get memberCount;
-  @override
-
-  /// Indicates if the List is private.
-  @JsonKey(name: 'private')
-  bool? get isPrivate;
-  @override
-
-  /// The UTC date time that the List was created on Twitter.
-  ///
-  /// ## How It Can Be Used
-  ///
-  /// - Can be used to determine how long a List has been on Twitter.
-  DateTime? get createdAt;
-  @override
-  @JsonKey(ignore: true)
-  _$$_ListDataCopyWith<_$_ListData> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _ListData&&(identical(other.id, id) || other.id == id)&&(identical(other.name, name) || other.name == name)&&(identical(other.description, description) || other.description == description)&&(identical(other.ownerId, ownerId) || other.ownerId == ownerId)&&(identical(other.followerCount, followerCount) || other.followerCount == followerCount)&&(identical(other.memberCount, memberCount) || other.memberCount == memberCount)&&(identical(other.isPrivate, isPrivate) || other.isPrivate == isPrivate)&&(identical(other.createdAt, createdAt) || other.createdAt == createdAt));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,name,description,ownerId,followerCount,memberCount,isPrivate,createdAt);
+
+@override
+String toString() {
+  return 'ListData(id: $id, name: $name, description: $description, ownerId: $ownerId, followerCount: $followerCount, memberCount: $memberCount, isPrivate: $isPrivate, createdAt: $createdAt)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ListDataCopyWith<$Res> implements $ListDataCopyWith<$Res> {
+  factory _$ListDataCopyWith(_ListData value, $Res Function(_ListData) _then) = __$ListDataCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String name, String? description, String? ownerId, int? followerCount, int? memberCount,@JsonKey(name: 'private') bool? isPrivate, DateTime? createdAt
+});
+
+
+
+
+}
+/// @nodoc
+class __$ListDataCopyWithImpl<$Res>
+    implements _$ListDataCopyWith<$Res> {
+  __$ListDataCopyWithImpl(this._self, this._then);
+
+  final _ListData _self;
+  final $Res Function(_ListData) _then;
+
+/// Create a copy of ListData
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? description = freezed,Object? ownerId = freezed,Object? followerCount = freezed,Object? memberCount = freezed,Object? isPrivate = freezed,Object? createdAt = freezed,}) {
+  return _then(_ListData(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,description: freezed == description ? _self.description : description // ignore: cast_nullable_to_non_nullable
+as String?,ownerId: freezed == ownerId ? _self.ownerId : ownerId // ignore: cast_nullable_to_non_nullable
+as String?,followerCount: freezed == followerCount ? _self.followerCount : followerCount // ignore: cast_nullable_to_non_nullable
+as int?,memberCount: freezed == memberCount ? _self.memberCount : memberCount // ignore: cast_nullable_to_non_nullable
+as int?,isPrivate: freezed == isPrivate ? _self.isPrivate : isPrivate // ignore: cast_nullable_to_non_nullable
+as bool?,createdAt: freezed == createdAt ? _self.createdAt : createdAt // ignore: cast_nullable_to_non_nullable
+as DateTime?,
+  ));
+}
+
+
+}
+
+// dart format on

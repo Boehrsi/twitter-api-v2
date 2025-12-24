@@ -29,7 +29,7 @@ part 'media_data.g.dart';
 ///
 ///  Note that video URLs are not currently available, only static images.
 @freezed
-class MediaData with _$MediaData {
+abstract class MediaData with _$MediaData {
   @JsonSerializable(includeIfNull: false)
   const factory MediaData({
     /// Unique identifier of the expanded media content.

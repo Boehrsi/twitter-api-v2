@@ -14,7 +14,7 @@ part 'tweet_count_data.freezed.dart';
 part 'tweet_count_data.g.dart';
 
 @freezed
-class TweetCountData with _$TweetCountData implements Data {
+abstract class TweetCountData with _$TweetCountData implements Data {
   const factory TweetCountData({
     /// Start time for the granularity.
     required DateTime start,

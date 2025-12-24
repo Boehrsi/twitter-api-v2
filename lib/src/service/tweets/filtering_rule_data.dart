@@ -14,7 +14,7 @@ part 'filtering_rule_data.freezed.dart';
 part 'filtering_rule_data.g.dart';
 
 @freezed
-class FilteringRuleData with _$FilteringRuleData implements Data {
+abstract class FilteringRuleData with _$FilteringRuleData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory FilteringRuleData({
     /// Unique identifier of this rule. This is returned as a string in order

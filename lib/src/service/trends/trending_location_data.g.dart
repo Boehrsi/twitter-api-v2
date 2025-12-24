@@ -8,18 +8,20 @@ part of 'trending_location_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TrendingLocationData _$$_TrendingLocationDataFromJson(Map json) =>
+_TrendingLocationData _$TrendingLocationDataFromJson(Map json) =>
     $checkedCreate(
-      r'_$_TrendingLocationData',
+      '_TrendingLocationData',
       json,
       ($checkedConvert) {
-        final val = _$_TrendingLocationData(
-          id: $checkedConvert('woeid', (v) => v as int),
-          parentId: $checkedConvert('parentid', (v) => v as int),
+        final val = _TrendingLocationData(
+          id: $checkedConvert('woeid', (v) => (v as num).toInt()),
+          parentId: $checkedConvert('parentid', (v) => (v as num).toInt()),
           name: $checkedConvert('name', (v) => v as String),
           countryName: $checkedConvert('country', (v) => v as String),
           country: $checkedConvert(
-              'countryCode', (v) => $enumDecodeNullable(_$CountryEnumMap, v)),
+            'countryCode',
+            (v) => $enumDecodeNullable(_$CountryEnumMap, v),
+          ),
         );
         return val;
       },
@@ -27,28 +29,19 @@ _$_TrendingLocationData _$$_TrendingLocationDataFromJson(Map json) =>
         'id': 'woeid',
         'parentId': 'parentid',
         'countryName': 'country',
-        'country': 'countryCode'
+        'country': 'countryCode',
       },
     );
 
-Map<String, dynamic> _$$_TrendingLocationDataToJson(
-    _$_TrendingLocationData instance) {
-  final val = <String, dynamic>{
-    'woeid': instance.id,
-    'parentid': instance.parentId,
-    'name': instance.name,
-    'country': instance.countryName,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('countryCode', _$CountryEnumMap[instance.country]);
-  return val;
-}
+Map<String, dynamic> _$TrendingLocationDataToJson(
+  _TrendingLocationData instance,
+) => <String, dynamic>{
+  'woeid': instance.id,
+  'parentid': instance.parentId,
+  'name': instance.name,
+  'country': instance.countryName,
+  'countryCode': ?_$CountryEnumMap[instance.country],
+};
 
 const _$CountryEnumMap = {
   Country.afghanistan: 'AF',

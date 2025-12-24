@@ -14,7 +14,7 @@ part 'mute_state_data.freezed.dart';
 part 'mute_state_data.g.dart';
 
 @freezed
-class MuteStateData with _$MuteStateData implements Data {
+abstract class MuteStateData with _$MuteStateData implements Data {
   const factory MuteStateData({
     /// Indicates whether the user is muting the specified user as a result of
     /// this request.

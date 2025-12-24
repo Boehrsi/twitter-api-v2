@@ -9,7 +9,7 @@ part 'topic_data.freezed.dart';
 part 'topic_data.g.dart';
 
 @freezed
-class TopicData with _$TopicData {
+abstract class TopicData with _$TopicData {
   const factory TopicData({
     /// The id of this topic.
     required String id,

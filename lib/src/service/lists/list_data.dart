@@ -29,7 +29,7 @@ part 'list_data.g.dart';
 /// additional fields to complete the primary List object and `user.fields` to
 /// complete the expansion object.
 @freezed
-class ListData with _$ListData implements Data {
+abstract class ListData with _$ListData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory ListData({
     /// The unique identifier of this List.

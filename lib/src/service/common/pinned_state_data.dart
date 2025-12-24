@@ -14,7 +14,7 @@ part 'pinned_state_data.freezed.dart';
 part 'pinned_state_data.g.dart';
 
 @freezed
-class PinnedStateData with _$PinnedStateData implements Data {
+abstract class PinnedStateData with _$PinnedStateData implements Data {
   const factory PinnedStateData({
     /// Indicates whether the user pinned the specified List as a result
     /// of the request.

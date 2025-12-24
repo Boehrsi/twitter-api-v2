@@ -13,7 +13,7 @@ part 'locale.freezed.dart';
 part 'locale.g.dart';
 
 @freezed
-class Locale with _$Locale {
+abstract class Locale with _$Locale {
   const factory Locale({
     /// The language
     required Language lang,

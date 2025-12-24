@@ -14,7 +14,7 @@ part 'oauth_response.freezed.dart';
 part 'oauth_response.g.dart';
 
 @freezed
-class OAuthResponse with _$OAuthResponse {
+abstract class OAuthResponse with _$OAuthResponse {
   // ignore: unused_element
   const OAuthResponse._();
 
@@ -24,7 +24,7 @@ class OAuthResponse with _$OAuthResponse {
     @JsonKey(name: 'scope') @ScopeConverter() required List<Scope> scopes,
     @JsonKey(name: 'expires_in')
     @DateTimeConverter()
-        required DateTime expiresAt,
+    required DateTime expiresAt,
   }) = _OAuthResponse;
 
   factory OAuthResponse.fromJson(Map<String, Object?> json) =>

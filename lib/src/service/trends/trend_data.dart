@@ -14,7 +14,7 @@ part 'trend_data.freezed.dart';
 part 'trend_data.g.dart';
 
 @freezed
-class TrendData with _$TrendData implements Data {
+abstract class TrendData with _$TrendData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory TrendData({
     /// The name of this trend.

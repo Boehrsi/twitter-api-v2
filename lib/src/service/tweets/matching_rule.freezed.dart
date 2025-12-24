@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,173 +9,278 @@ part of 'matching_rule.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-MatchingRule _$MatchingRuleFromJson(Map<String, dynamic> json) {
-  return _MatchingRule.fromJson(json);
-}
 
 /// @nodoc
 mixin _$MatchingRule {
-  /// ID of the filter rule that matched against the Tweet delivered.
-  String get id => throw _privateConstructorUsedError;
 
-  /// The tag label of the filter rule that matched against the
-  /// Tweet delivered.
-  String get tag => throw _privateConstructorUsedError;
+/// ID of the filter rule that matched against the Tweet delivered.
+ String get id;/// The tag label of the filter rule that matched against the
+/// Tweet delivered.
+ String get tag;
+/// Create a copy of MatchingRule
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$MatchingRuleCopyWith<MatchingRule> get copyWith => _$MatchingRuleCopyWithImpl<MatchingRule>(this as MatchingRule, _$identity);
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $MatchingRuleCopyWith<MatchingRule> get copyWith =>
-      throw _privateConstructorUsedError;
+  /// Serializes this MatchingRule to a JSON map.
+  Map<String, dynamic> toJson();
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is MatchingRule&&(identical(other.id, id) || other.id == id)&&(identical(other.tag, tag) || other.tag == tag));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,tag);
+
+@override
+String toString() {
+  return 'MatchingRule(id: $id, tag: $tag)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $MatchingRuleCopyWith<$Res> {
-  factory $MatchingRuleCopyWith(
-          MatchingRule value, $Res Function(MatchingRule) then) =
-      _$MatchingRuleCopyWithImpl<$Res, MatchingRule>;
-  @useResult
-  $Res call({String id, String tag});
-}
+abstract mixin class $MatchingRuleCopyWith<$Res>  {
+  factory $MatchingRuleCopyWith(MatchingRule value, $Res Function(MatchingRule) _then) = _$MatchingRuleCopyWithImpl;
+@useResult
+$Res call({
+ String id, String tag
+});
 
+
+
+
+}
 /// @nodoc
-class _$MatchingRuleCopyWithImpl<$Res, $Val extends MatchingRule>
+class _$MatchingRuleCopyWithImpl<$Res>
     implements $MatchingRuleCopyWith<$Res> {
-  _$MatchingRuleCopyWithImpl(this._value, this._then);
+  _$MatchingRuleCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final MatchingRule _self;
+  final $Res Function(MatchingRule) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? tag = null,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      tag: null == tag
-          ? _value.tag
-          : tag // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of MatchingRule
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? tag = null,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,tag: null == tag ? _self.tag : tag // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_MatchingRuleCopyWith<$Res>
-    implements $MatchingRuleCopyWith<$Res> {
-  factory _$$_MatchingRuleCopyWith(
-          _$_MatchingRule value, $Res Function(_$_MatchingRule) then) =
-      __$$_MatchingRuleCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String id, String tag});
 }
 
-/// @nodoc
-class __$$_MatchingRuleCopyWithImpl<$Res>
-    extends _$MatchingRuleCopyWithImpl<$Res, _$_MatchingRule>
-    implements _$$_MatchingRuleCopyWith<$Res> {
-  __$$_MatchingRuleCopyWithImpl(
-      _$_MatchingRule _value, $Res Function(_$_MatchingRule) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? tag = null,
-  }) {
-    return _then(_$_MatchingRule(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      tag: null == tag
-          ? _value.tag
-          : tag // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
+/// Adds pattern-matching-related methods to [MatchingRule].
+extension MatchingRulePatterns on MatchingRule {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _MatchingRule value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _MatchingRule() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _MatchingRule value)  $default,){
+final _that = this;
+switch (_that) {
+case _MatchingRule():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _MatchingRule value)?  $default,){
+final _that = this;
+switch (_that) {
+case _MatchingRule() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String tag)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _MatchingRule() when $default != null:
+return $default(_that.id,_that.tag);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String tag)  $default,) {final _that = this;
+switch (_that) {
+case _MatchingRule():
+return $default(_that.id,_that.tag);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String tag)?  $default,) {final _that = this;
+switch (_that) {
+case _MatchingRule() when $default != null:
+return $default(_that.id,_that.tag);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_MatchingRule implements _MatchingRule {
-  const _$_MatchingRule({required this.id, required this.tag});
 
-  factory _$_MatchingRule.fromJson(Map<String, dynamic> json) =>
-      _$$_MatchingRuleFromJson(json);
+class _MatchingRule implements MatchingRule {
+  const _MatchingRule({required this.id, required this.tag});
+  factory _MatchingRule.fromJson(Map<String, dynamic> json) => _$MatchingRuleFromJson(json);
 
-  /// ID of the filter rule that matched against the Tweet delivered.
-  @override
-  final String id;
+/// ID of the filter rule that matched against the Tweet delivered.
+@override final  String id;
+/// The tag label of the filter rule that matched against the
+/// Tweet delivered.
+@override final  String tag;
 
-  /// The tag label of the filter rule that matched against the
-  /// Tweet delivered.
-  @override
-  final String tag;
+/// Create a copy of MatchingRule
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$MatchingRuleCopyWith<_MatchingRule> get copyWith => __$MatchingRuleCopyWithImpl<_MatchingRule>(this, _$identity);
 
-  @override
-  String toString() {
-    return 'MatchingRule(id: $id, tag: $tag)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_MatchingRule &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.tag, tag) || other.tag == tag));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, tag);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_MatchingRuleCopyWith<_$_MatchingRule> get copyWith =>
-      __$$_MatchingRuleCopyWithImpl<_$_MatchingRule>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_MatchingRuleToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$MatchingRuleToJson(this, );
 }
 
-abstract class _MatchingRule implements MatchingRule {
-  const factory _MatchingRule(
-      {required final String id, required final String tag}) = _$_MatchingRule;
-
-  factory _MatchingRule.fromJson(Map<String, dynamic> json) =
-      _$_MatchingRule.fromJson;
-
-  @override
-
-  /// ID of the filter rule that matched against the Tweet delivered.
-  String get id;
-  @override
-
-  /// The tag label of the filter rule that matched against the
-  /// Tweet delivered.
-  String get tag;
-  @override
-  @JsonKey(ignore: true)
-  _$$_MatchingRuleCopyWith<_$_MatchingRule> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _MatchingRule&&(identical(other.id, id) || other.id == id)&&(identical(other.tag, tag) || other.tag == tag));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,tag);
+
+@override
+String toString() {
+  return 'MatchingRule(id: $id, tag: $tag)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$MatchingRuleCopyWith<$Res> implements $MatchingRuleCopyWith<$Res> {
+  factory _$MatchingRuleCopyWith(_MatchingRule value, $Res Function(_MatchingRule) _then) = __$MatchingRuleCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String tag
+});
+
+
+
+
+}
+/// @nodoc
+class __$MatchingRuleCopyWithImpl<$Res>
+    implements _$MatchingRuleCopyWith<$Res> {
+  __$MatchingRuleCopyWithImpl(this._self, this._then);
+
+  final _MatchingRule _self;
+  final $Res Function(_MatchingRule) _then;
+
+/// Create a copy of MatchingRule
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? tag = null,}) {
+  return _then(_MatchingRule(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,tag: null == tag ? _self.tag : tag // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+// dart format on

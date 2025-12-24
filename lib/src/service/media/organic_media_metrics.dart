@@ -11,7 +11,7 @@ part 'organic_media_metrics.freezed.dart';
 part 'organic_media_metrics.g.dart';
 
 @freezed
-class OrganicMediaMetrics with _$OrganicMediaMetrics {
+abstract class OrganicMediaMetrics with _$OrganicMediaMetrics {
   const factory OrganicMediaMetrics({
     /// The number of users who played through to each quartile in a video.
     ///

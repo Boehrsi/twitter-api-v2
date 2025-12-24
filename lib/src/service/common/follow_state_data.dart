@@ -14,7 +14,7 @@ part 'follow_state_data.freezed.dart';
 part 'follow_state_data.g.dart';
 
 @freezed
-class FollowStateData with _$FollowStateData implements Data {
+abstract class FollowStateData with _$FollowStateData implements Data {
   const factory FollowStateData({
     /// Indicates whether the user followed the specified List as a result
     /// of the request.

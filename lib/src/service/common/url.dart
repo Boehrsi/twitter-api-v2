@@ -11,7 +11,7 @@ part 'url.freezed.dart';
 part 'url.g.dart';
 
 @freezed
-class Url with _$Url {
+abstract class Url with _$Url {
   @JsonSerializable(includeIfNull: false)
   const factory Url({
     /// The start position (zero-based) of the recognized URL within the object.

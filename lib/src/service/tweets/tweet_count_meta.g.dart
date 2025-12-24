@@ -8,33 +8,21 @@ part of 'tweet_count_meta.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TweetCountMeta _$$_TweetCountMetaFromJson(Map json) => $checkedCreate(
-      r'_$_TweetCountMeta',
-      json,
-      ($checkedConvert) {
-        final val = _$_TweetCountMeta(
-          total: $checkedConvert('total_tweet_count', (v) => v as int),
-          nextToken: $checkedConvert('next_token', (v) => v as String?),
-        );
-        return val;
-      },
-      fieldKeyMap: const {
-        'total': 'total_tweet_count',
-        'nextToken': 'next_token'
-      },
+_TweetCountMeta _$TweetCountMetaFromJson(Map json) => $checkedCreate(
+  '_TweetCountMeta',
+  json,
+  ($checkedConvert) {
+    final val = _TweetCountMeta(
+      total: $checkedConvert('total_tweet_count', (v) => (v as num).toInt()),
+      nextToken: $checkedConvert('next_token', (v) => v as String?),
     );
+    return val;
+  },
+  fieldKeyMap: const {'total': 'total_tweet_count', 'nextToken': 'next_token'},
+);
 
-Map<String, dynamic> _$$_TweetCountMetaToJson(_$_TweetCountMeta instance) {
-  final val = <String, dynamic>{
-    'total_tweet_count': instance.total,
-  };
-
-  void writeNotNull(String key, dynamic value) {
-    if (value != null) {
-      val[key] = value;
-    }
-  }
-
-  writeNotNull('next_token', instance.nextToken);
-  return val;
-}
+Map<String, dynamic> _$TweetCountMetaToJson(_TweetCountMeta instance) =>
+    <String, dynamic>{
+      'total_tweet_count': instance.total,
+      'next_token': ?instance.nextToken,
+    };

@@ -8,29 +8,27 @@ part of 'tweet_context_annotation_group.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TweetContextAnnotationGroup _$$_TweetContextAnnotationGroupFromJson(
-        Map json) =>
-    $checkedCreate(
-      r'_$_TweetContextAnnotationGroup',
-      json,
-      ($checkedConvert) {
-        final val = _$_TweetContextAnnotationGroup(
-          domain: $checkedConvert(
-              'domain',
-              (v) => TweetContextAnnotation.fromJson(
-                  Map<String, Object?>.from(v as Map))),
-          entity: $checkedConvert(
-              'entity',
-              (v) => TweetContextAnnotation.fromJson(
-                  Map<String, Object?>.from(v as Map))),
-        );
-        return val;
-      },
-    );
+_TweetContextAnnotationGroup _$TweetContextAnnotationGroupFromJson(
+  Map json,
+) => $checkedCreate('_TweetContextAnnotationGroup', json, ($checkedConvert) {
+  final val = _TweetContextAnnotationGroup(
+    domain: $checkedConvert(
+      'domain',
+      (v) =>
+          TweetContextAnnotation.fromJson(Map<String, Object?>.from(v as Map)),
+    ),
+    entity: $checkedConvert(
+      'entity',
+      (v) =>
+          TweetContextAnnotation.fromJson(Map<String, Object?>.from(v as Map)),
+    ),
+  );
+  return val;
+});
 
-Map<String, dynamic> _$$_TweetContextAnnotationGroupToJson(
-        _$_TweetContextAnnotationGroup instance) =>
-    <String, dynamic>{
-      'domain': instance.domain.toJson(),
-      'entity': instance.entity.toJson(),
-    };
+Map<String, dynamic> _$TweetContextAnnotationGroupToJson(
+  _TweetContextAnnotationGroup instance,
+) => <String, dynamic>{
+  'domain': instance.domain.toJson(),
+  'entity': instance.entity.toJson(),
+};

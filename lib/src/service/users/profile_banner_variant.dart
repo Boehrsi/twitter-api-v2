@@ -11,7 +11,7 @@ part 'profile_banner_variant.freezed.dart';
 part 'profile_banner_variant.g.dart';
 
 @freezed
-class ProfileBannerVariant with _$ProfileBannerVariant {
+abstract class ProfileBannerVariant with _$ProfileBannerVariant {
   const factory ProfileBannerVariant({
     /// The height of this image.
     @JsonKey(name: 'h') required int height,

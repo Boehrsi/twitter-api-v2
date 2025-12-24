@@ -11,7 +11,7 @@ part 'private_media_metrics.freezed.dart';
 part 'private_media_metrics.g.dart';
 
 @freezed
-class PrivateMediaMetrics with _$PrivateMediaMetrics {
+abstract class PrivateMediaMetrics with _$PrivateMediaMetrics {
   const factory PrivateMediaMetrics({
     /// The number of users who played through to each quartile in a video.
     ///

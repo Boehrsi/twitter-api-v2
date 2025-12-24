@@ -14,7 +14,7 @@ part 'tweet_withheld.freezed.dart';
 part 'tweet_withheld.g.dart';
 
 @freezed
-class TweetWithheld with _$TweetWithheld {
+abstract class TweetWithheld with _$TweetWithheld {
   const factory TweetWithheld({
     /// Indicates if the content is being withheld for on the basis of
     /// copyright infringement.

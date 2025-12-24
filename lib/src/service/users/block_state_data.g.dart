@@ -8,19 +8,13 @@ part of 'block_state_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_BlockStateData _$$_BlockStateDataFromJson(Map json) => $checkedCreate(
-      r'_$_BlockStateData',
-      json,
-      ($checkedConvert) {
-        final val = _$_BlockStateData(
-          isBlocking: $checkedConvert('blocking', (v) => v as bool),
-        );
-        return val;
-      },
-      fieldKeyMap: const {'isBlocking': 'blocking'},
-    );
+_BlockStateData _$BlockStateDataFromJson(Map json) =>
+    $checkedCreate('_BlockStateData', json, ($checkedConvert) {
+      final val = _BlockStateData(
+        isBlocking: $checkedConvert('blocking', (v) => v as bool),
+      );
+      return val;
+    }, fieldKeyMap: const {'isBlocking': 'blocking'});
 
-Map<String, dynamic> _$$_BlockStateDataToJson(_$_BlockStateData instance) =>
-    <String, dynamic>{
-      'blocking': instance.isBlocking,
-    };
+Map<String, dynamic> _$BlockStateDataToJson(_BlockStateData instance) =>
+    <String, dynamic>{'blocking': instance.isBlocking};

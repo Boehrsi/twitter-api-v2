@@ -14,7 +14,7 @@ part 'message_data.freezed.dart';
 part 'message_data.g.dart';
 
 @freezed
-class MessageData with _$MessageData implements Data {
+abstract class MessageData with _$MessageData implements Data {
   const factory MessageData({
     /// The `id` of the event sent in this conversation.
     @JsonKey(name: 'dm_event_id') required String eventId,

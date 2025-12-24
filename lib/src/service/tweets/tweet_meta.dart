@@ -14,7 +14,7 @@ part 'tweet_meta.freezed.dart';
 part 'tweet_meta.g.dart';
 
 @freezed
-class TweetMeta with _$TweetMeta implements Pageable {
+abstract class TweetMeta with _$TweetMeta implements Pageable {
   @JsonSerializable(includeIfNull: false)
   const factory TweetMeta({
     /// The Tweet ID of the most recent Tweet returned in the response.

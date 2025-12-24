@@ -9,7 +9,7 @@ part 'dm_attachments.freezed.dart';
 part 'dm_attachments.g.dart';
 
 @freezed
-class DMAttachments with _$DMAttachments {
+abstract class DMAttachments with _$DMAttachments {
   const factory DMAttachments({
     /// List of unique identifiers of media attached to this Tweet. These
     /// identifiers use the same media key format as those returned by the

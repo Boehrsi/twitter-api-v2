@@ -14,7 +14,7 @@ part 'member_state_data.freezed.dart';
 part 'member_state_data.g.dart';
 
 @freezed
-class MemberStateData with _$MemberStateData implements Data {
+abstract class MemberStateData with _$MemberStateData implements Data {
   const factory MemberStateData({
     /// Indicates whether the member specified in the request has been added
     /// to the List.

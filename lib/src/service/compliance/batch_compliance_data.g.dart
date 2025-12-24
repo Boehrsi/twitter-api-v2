@@ -8,56 +8,59 @@ part of 'batch_compliance_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_BatchComplianceData _$$_BatchComplianceDataFromJson(Map json) =>
-    $checkedCreate(
-      r'_$_BatchComplianceData',
-      json,
-      ($checkedConvert) {
-        final val = _$_BatchComplianceData(
-          id: $checkedConvert('id', (v) => v as String),
-          type:
-              $checkedConvert('type', (v) => $enumDecode(_$JobTypeEnumMap, v)),
-          status: $checkedConvert(
-              'status', (v) => $enumDecode(_$JobStatusEnumMap, v)),
-          resumable: $checkedConvert('resumable', (v) => v as bool),
-          uploadUrl: $checkedConvert('upload_url', (v) => v as String),
-          downloadUrl: $checkedConvert('download_url', (v) => v as String),
-          uploadExpiresAt: $checkedConvert(
-              'upload_expires_at', (v) => DateTime.parse(v as String)),
-          downloadExpiresAt: $checkedConvert(
-              'download_expires_at', (v) => DateTime.parse(v as String)),
-          createdAt:
-              $checkedConvert('created_at', (v) => DateTime.parse(v as String)),
-        );
-        return val;
-      },
-      fieldKeyMap: const {
-        'uploadUrl': 'upload_url',
-        'downloadUrl': 'download_url',
-        'uploadExpiresAt': 'upload_expires_at',
-        'downloadExpiresAt': 'download_expires_at',
-        'createdAt': 'created_at'
-      },
+_BatchComplianceData _$BatchComplianceDataFromJson(Map json) => $checkedCreate(
+  '_BatchComplianceData',
+  json,
+  ($checkedConvert) {
+    final val = _BatchComplianceData(
+      id: $checkedConvert('id', (v) => v as String),
+      type: $checkedConvert('type', (v) => $enumDecode(_$JobTypeEnumMap, v)),
+      status: $checkedConvert(
+        'status',
+        (v) => $enumDecode(_$JobStatusEnumMap, v),
+      ),
+      resumable: $checkedConvert('resumable', (v) => v as bool),
+      uploadUrl: $checkedConvert('upload_url', (v) => v as String),
+      downloadUrl: $checkedConvert('download_url', (v) => v as String),
+      uploadExpiresAt: $checkedConvert(
+        'upload_expires_at',
+        (v) => DateTime.parse(v as String),
+      ),
+      downloadExpiresAt: $checkedConvert(
+        'download_expires_at',
+        (v) => DateTime.parse(v as String),
+      ),
+      createdAt: $checkedConvert(
+        'created_at',
+        (v) => DateTime.parse(v as String),
+      ),
     );
+    return val;
+  },
+  fieldKeyMap: const {
+    'uploadUrl': 'upload_url',
+    'downloadUrl': 'download_url',
+    'uploadExpiresAt': 'upload_expires_at',
+    'downloadExpiresAt': 'download_expires_at',
+    'createdAt': 'created_at',
+  },
+);
 
-Map<String, dynamic> _$$_BatchComplianceDataToJson(
-        _$_BatchComplianceData instance) =>
-    <String, dynamic>{
-      'id': instance.id,
-      'type': _$JobTypeEnumMap[instance.type]!,
-      'status': _$JobStatusEnumMap[instance.status]!,
-      'resumable': instance.resumable,
-      'upload_url': instance.uploadUrl,
-      'download_url': instance.downloadUrl,
-      'upload_expires_at': instance.uploadExpiresAt.toIso8601String(),
-      'download_expires_at': instance.downloadExpiresAt.toIso8601String(),
-      'created_at': instance.createdAt.toIso8601String(),
-    };
-
-const _$JobTypeEnumMap = {
-  JobType.tweets: 'tweets',
-  JobType.users: 'users',
+Map<String, dynamic> _$BatchComplianceDataToJson(
+  _BatchComplianceData instance,
+) => <String, dynamic>{
+  'id': instance.id,
+  'type': _$JobTypeEnumMap[instance.type]!,
+  'status': _$JobStatusEnumMap[instance.status]!,
+  'resumable': instance.resumable,
+  'upload_url': instance.uploadUrl,
+  'download_url': instance.downloadUrl,
+  'upload_expires_at': instance.uploadExpiresAt.toIso8601String(),
+  'download_expires_at': instance.downloadExpiresAt.toIso8601String(),
+  'created_at': instance.createdAt.toIso8601String(),
 };
+
+const _$JobTypeEnumMap = {JobType.tweets: 'tweets', JobType.users: 'users'};
 
 const _$JobStatusEnumMap = {
   JobStatus.created: 'created',

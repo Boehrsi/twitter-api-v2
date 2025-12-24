@@ -9,7 +9,7 @@ part 'dm_referenced_tweet.freezed.dart';
 part 'dm_referenced_tweet.g.dart';
 
 @freezed
-class DMReferencedTweet with _$DMReferencedTweet {
+abstract class DMReferencedTweet with _$DMReferencedTweet {
   const factory DMReferencedTweet({
     /// The id of a "shared" Tweet in the Direct Message.
     required String id,

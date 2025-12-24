@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,202 +9,285 @@ part of 'filtering_rule_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-FilteringRuleData _$FilteringRuleDataFromJson(Map<String, dynamic> json) {
-  return _FilteringRuleData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$FilteringRuleData {
-  /// Unique identifier of this rule. This is returned as a string in order
-  /// to avoid complications with languages and tools that cannot
-  /// handle large integers.
-  String get id => throw _privateConstructorUsedError;
 
-  /// The rule text as submitted when creating the rule.
-  String get value => throw _privateConstructorUsedError;
+/// Unique identifier of this rule. This is returned as a string in order
+/// to avoid complications with languages and tools that cannot
+/// handle large integers.
+ String get id;/// The rule text as submitted when creating the rule.
+ String get value;/// The tag label as defined when creating the rule.
+ String? get tag;
+/// Create a copy of FilteringRuleData
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$FilteringRuleDataCopyWith<FilteringRuleData> get copyWith => _$FilteringRuleDataCopyWithImpl<FilteringRuleData>(this as FilteringRuleData, _$identity);
 
-  /// The tag label as defined when creating the rule.
-  String? get tag => throw _privateConstructorUsedError;
+  /// Serializes this FilteringRuleData to a JSON map.
+  Map<String, dynamic> toJson();
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $FilteringRuleDataCopyWith<FilteringRuleData> get copyWith =>
-      throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is FilteringRuleData&&(identical(other.id, id) || other.id == id)&&(identical(other.value, value) || other.value == value)&&(identical(other.tag, tag) || other.tag == tag));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,value,tag);
+
+@override
+String toString() {
+  return 'FilteringRuleData(id: $id, value: $value, tag: $tag)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $FilteringRuleDataCopyWith<$Res> {
-  factory $FilteringRuleDataCopyWith(
-          FilteringRuleData value, $Res Function(FilteringRuleData) then) =
-      _$FilteringRuleDataCopyWithImpl<$Res, FilteringRuleData>;
-  @useResult
-  $Res call({String id, String value, String? tag});
-}
+abstract mixin class $FilteringRuleDataCopyWith<$Res>  {
+  factory $FilteringRuleDataCopyWith(FilteringRuleData value, $Res Function(FilteringRuleData) _then) = _$FilteringRuleDataCopyWithImpl;
+@useResult
+$Res call({
+ String id, String value, String? tag
+});
 
+
+
+
+}
 /// @nodoc
-class _$FilteringRuleDataCopyWithImpl<$Res, $Val extends FilteringRuleData>
+class _$FilteringRuleDataCopyWithImpl<$Res>
     implements $FilteringRuleDataCopyWith<$Res> {
-  _$FilteringRuleDataCopyWithImpl(this._value, this._then);
+  _$FilteringRuleDataCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final FilteringRuleData _self;
+  final $Res Function(FilteringRuleData) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? value = null,
-    Object? tag = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as String,
-      tag: freezed == tag
-          ? _value.tag
-          : tag // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of FilteringRuleData
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? value = null,Object? tag = freezed,}) {
+  return _then(_self.copyWith(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,value: null == value ? _self.value : value // ignore: cast_nullable_to_non_nullable
+as String,tag: freezed == tag ? _self.tag : tag // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_FilteringRuleDataCopyWith<$Res>
-    implements $FilteringRuleDataCopyWith<$Res> {
-  factory _$$_FilteringRuleDataCopyWith(_$_FilteringRuleData value,
-          $Res Function(_$_FilteringRuleData) then) =
-      __$$_FilteringRuleDataCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String id, String value, String? tag});
 }
 
-/// @nodoc
-class __$$_FilteringRuleDataCopyWithImpl<$Res>
-    extends _$FilteringRuleDataCopyWithImpl<$Res, _$_FilteringRuleData>
-    implements _$$_FilteringRuleDataCopyWith<$Res> {
-  __$$_FilteringRuleDataCopyWithImpl(
-      _$_FilteringRuleData _value, $Res Function(_$_FilteringRuleData) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? value = null,
-    Object? tag = freezed,
-  }) {
-    return _then(_$_FilteringRuleData(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      value: null == value
-          ? _value.value
-          : value // ignore: cast_nullable_to_non_nullable
-              as String,
-      tag: freezed == tag
-          ? _value.tag
-          : tag // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
+/// Adds pattern-matching-related methods to [FilteringRuleData].
+extension FilteringRuleDataPatterns on FilteringRuleData {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _FilteringRuleData value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _FilteringRuleData() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _FilteringRuleData value)  $default,){
+final _that = this;
+switch (_that) {
+case _FilteringRuleData():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _FilteringRuleData value)?  $default,){
+final _that = this;
+switch (_that) {
+case _FilteringRuleData() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( String id,  String value,  String? tag)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _FilteringRuleData() when $default != null:
+return $default(_that.id,_that.value,_that.tag);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( String id,  String value,  String? tag)  $default,) {final _that = this;
+switch (_that) {
+case _FilteringRuleData():
+return $default(_that.id,_that.value,_that.tag);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( String id,  String value,  String? tag)?  $default,) {final _that = this;
+switch (_that) {
+case _FilteringRuleData() when $default != null:
+return $default(_that.id,_that.value,_that.tag);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 
 @JsonSerializable(includeIfNull: false)
-class _$_FilteringRuleData implements _FilteringRuleData {
-  const _$_FilteringRuleData({required this.id, required this.value, this.tag});
+class _FilteringRuleData implements FilteringRuleData {
+  const _FilteringRuleData({required this.id, required this.value, this.tag});
+  factory _FilteringRuleData.fromJson(Map<String, dynamic> json) => _$FilteringRuleDataFromJson(json);
 
-  factory _$_FilteringRuleData.fromJson(Map<String, dynamic> json) =>
-      _$$_FilteringRuleDataFromJson(json);
+/// Unique identifier of this rule. This is returned as a string in order
+/// to avoid complications with languages and tools that cannot
+/// handle large integers.
+@override final  String id;
+/// The rule text as submitted when creating the rule.
+@override final  String value;
+/// The tag label as defined when creating the rule.
+@override final  String? tag;
 
-  /// Unique identifier of this rule. This is returned as a string in order
-  /// to avoid complications with languages and tools that cannot
-  /// handle large integers.
-  @override
-  final String id;
+/// Create a copy of FilteringRuleData
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$FilteringRuleDataCopyWith<_FilteringRuleData> get copyWith => __$FilteringRuleDataCopyWithImpl<_FilteringRuleData>(this, _$identity);
 
-  /// The rule text as submitted when creating the rule.
-  @override
-  final String value;
-
-  /// The tag label as defined when creating the rule.
-  @override
-  final String? tag;
-
-  @override
-  String toString() {
-    return 'FilteringRuleData(id: $id, value: $value, tag: $tag)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_FilteringRuleData &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.value, value) || other.value == value) &&
-            (identical(other.tag, tag) || other.tag == tag));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, id, value, tag);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_FilteringRuleDataCopyWith<_$_FilteringRuleData> get copyWith =>
-      __$$_FilteringRuleDataCopyWithImpl<_$_FilteringRuleData>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_FilteringRuleDataToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$FilteringRuleDataToJson(this, );
 }
 
-abstract class _FilteringRuleData implements FilteringRuleData {
-  const factory _FilteringRuleData(
-      {required final String id,
-      required final String value,
-      final String? tag}) = _$_FilteringRuleData;
-
-  factory _FilteringRuleData.fromJson(Map<String, dynamic> json) =
-      _$_FilteringRuleData.fromJson;
-
-  @override
-
-  /// Unique identifier of this rule. This is returned as a string in order
-  /// to avoid complications with languages and tools that cannot
-  /// handle large integers.
-  String get id;
-  @override
-
-  /// The rule text as submitted when creating the rule.
-  String get value;
-  @override
-
-  /// The tag label as defined when creating the rule.
-  String? get tag;
-  @override
-  @JsonKey(ignore: true)
-  _$$_FilteringRuleDataCopyWith<_$_FilteringRuleData> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _FilteringRuleData&&(identical(other.id, id) || other.id == id)&&(identical(other.value, value) || other.value == value)&&(identical(other.tag, tag) || other.tag == tag));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,id,value,tag);
+
+@override
+String toString() {
+  return 'FilteringRuleData(id: $id, value: $value, tag: $tag)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$FilteringRuleDataCopyWith<$Res> implements $FilteringRuleDataCopyWith<$Res> {
+  factory _$FilteringRuleDataCopyWith(_FilteringRuleData value, $Res Function(_FilteringRuleData) _then) = __$FilteringRuleDataCopyWithImpl;
+@override @useResult
+$Res call({
+ String id, String value, String? tag
+});
+
+
+
+
+}
+/// @nodoc
+class __$FilteringRuleDataCopyWithImpl<$Res>
+    implements _$FilteringRuleDataCopyWith<$Res> {
+  __$FilteringRuleDataCopyWithImpl(this._self, this._then);
+
+  final _FilteringRuleData _self;
+  final $Res Function(_FilteringRuleData) _then;
+
+/// Create a copy of FilteringRuleData
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? value = null,Object? tag = freezed,}) {
+  return _then(_FilteringRuleData(
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as String,value: null == value ? _self.value : value // ignore: cast_nullable_to_non_nullable
+as String,tag: freezed == tag ? _self.tag : tag // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on

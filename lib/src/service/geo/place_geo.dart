@@ -9,7 +9,7 @@ part 'place_geo.freezed.dart';
 part 'place_geo.g.dart';
 
 @freezed
-class PlaceGeo with _$PlaceGeo {
+abstract class PlaceGeo with _$PlaceGeo {
   const factory PlaceGeo({
     /// The place type.
     required String type,

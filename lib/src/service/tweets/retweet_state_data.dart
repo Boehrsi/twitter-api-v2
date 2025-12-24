@@ -14,7 +14,7 @@ part 'retweet_state_data.freezed.dart';
 part 'retweet_state_data.g.dart';
 
 @freezed
-class RetweetStateData with _$RetweetStateData implements Data {
+abstract class RetweetStateData with _$RetweetStateData implements Data {
   const factory RetweetStateData({
     /// Indicates whether the user Retweets the specified Tweet as a result
     /// of this request.

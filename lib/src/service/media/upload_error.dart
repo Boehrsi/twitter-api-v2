@@ -9,7 +9,7 @@ part 'upload_error.freezed.dart';
 part 'upload_error.g.dart';
 
 @freezed
-class UploadError with _$UploadError {
+abstract class UploadError with _$UploadError {
   const factory UploadError({
     /// The error code.
     required int code,

@@ -23,7 +23,7 @@ part 'poll_data.g.dart';
 /// Use the expansion with the field parameter: poll.fields when requesting
 /// additional fields to complete the object.
 @freezed
-class PollData with _$PollData {
+abstract class PollData with _$PollData {
   @JsonSerializable(includeIfNull: false)
   const factory PollData({
     /// Unique identifier of the expanded poll.

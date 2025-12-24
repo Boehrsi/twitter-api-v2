@@ -15,7 +15,7 @@ part 'user_entities.freezed.dart';
 part 'user_entities.g.dart';
 
 @freezed
-class UserEntities with _$UserEntities {
+abstract class UserEntities with _$UserEntities {
   @JsonSerializable(includeIfNull: false)
   const factory UserEntities({
     /// Contains details about the user's profile website.

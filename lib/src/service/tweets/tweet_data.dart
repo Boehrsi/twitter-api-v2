@@ -42,7 +42,7 @@ part 'tweet_data.g.dart';
 /// with only default fields. Use the expansion with the field parameter:
 /// tweet.fields when requesting additional fields to complete the object.
 @freezed
-class TweetData with _$TweetData implements Data {
+abstract class TweetData with _$TweetData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory TweetData({
     /// Unique identifier of this Tweet. This is returned as a string in order

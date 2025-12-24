@@ -14,7 +14,7 @@ part 'delete_state_data.freezed.dart';
 part 'delete_state_data.g.dart';
 
 @freezed
-class DeleteStateData with _$DeleteStateData implements Data {
+abstract class DeleteStateData with _$DeleteStateData implements Data {
   const factory DeleteStateData({
     /// Indicates whether the content specified in the request has been deleted.
     @JsonKey(name: 'deleted') required bool isDeleted,

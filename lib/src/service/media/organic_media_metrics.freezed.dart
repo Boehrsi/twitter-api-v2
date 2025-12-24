@@ -1,5 +1,5 @@
-// coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// coverage:ignore-file
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
@@ -9,367 +9,338 @@ part of 'organic_media_metrics.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
-
-OrganicMediaMetrics _$OrganicMediaMetricsFromJson(Map<String, dynamic> json) {
-  return _OrganicMediaMetrics.fromJson(json);
-}
 
 /// @nodoc
 mixin _$OrganicMediaMetrics {
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_0_count')
-  int get playback0Count => throw _privateConstructorUsedError;
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_25_count')
-  int get playback25Count => throw _privateConstructorUsedError;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@JsonKey(name: 'playback_0_count') int get playback0Count;/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@JsonKey(name: 'playback_25_count') int get playback25Count;/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@JsonKey(name: 'playback_50_count') int get playback50Count;/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@JsonKey(name: 'playback_75_count') int get playback75Count;/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@JsonKey(name: 'playback_100_count') int get playback100Count;/// A count of how many times the video included in the Tweet has been
+/// viewed.
+///
+/// This is the number of video views aggregated across all Tweets in which
+/// the given video has been posted. That means that the metric includes
+/// the combined views from any instance where the video has been Retweeted
+/// or re-posted in separate Tweets.
+ int get viewCount;
+/// Create a copy of OrganicMediaMetrics
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$OrganicMediaMetricsCopyWith<OrganicMediaMetrics> get copyWith => _$OrganicMediaMetricsCopyWithImpl<OrganicMediaMetrics>(this as OrganicMediaMetrics, _$identity);
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_50_count')
-  int get playback50Count => throw _privateConstructorUsedError;
+  /// Serializes this OrganicMediaMetrics to a JSON map.
+  Map<String, dynamic> toJson();
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_75_count')
-  int get playback75Count => throw _privateConstructorUsedError;
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_100_count')
-  int get playback100Count => throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is OrganicMediaMetrics&&(identical(other.playback0Count, playback0Count) || other.playback0Count == playback0Count)&&(identical(other.playback25Count, playback25Count) || other.playback25Count == playback25Count)&&(identical(other.playback50Count, playback50Count) || other.playback50Count == playback50Count)&&(identical(other.playback75Count, playback75Count) || other.playback75Count == playback75Count)&&(identical(other.playback100Count, playback100Count) || other.playback100Count == playback100Count)&&(identical(other.viewCount, viewCount) || other.viewCount == viewCount));
+}
 
-  /// A count of how many times the video included in the Tweet has been
-  /// viewed.
-  ///
-  /// This is the number of video views aggregated across all Tweets in which
-  /// the given video has been posted. That means that the metric includes
-  /// the combined views from any instance where the video has been Retweeted
-  /// or re-posted in separate Tweets.
-  int get viewCount => throw _privateConstructorUsedError;
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,playback0Count,playback25Count,playback50Count,playback75Count,playback100Count,viewCount);
 
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
-  $OrganicMediaMetricsCopyWith<OrganicMediaMetrics> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'OrganicMediaMetrics(playback0Count: $playback0Count, playback25Count: $playback25Count, playback50Count: $playback50Count, playback75Count: $playback75Count, playback100Count: $playback100Count, viewCount: $viewCount)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $OrganicMediaMetricsCopyWith<$Res> {
-  factory $OrganicMediaMetricsCopyWith(
-          OrganicMediaMetrics value, $Res Function(OrganicMediaMetrics) then) =
-      _$OrganicMediaMetricsCopyWithImpl<$Res, OrganicMediaMetrics>;
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'playback_0_count') int playback0Count,
-      @JsonKey(name: 'playback_25_count') int playback25Count,
-      @JsonKey(name: 'playback_50_count') int playback50Count,
-      @JsonKey(name: 'playback_75_count') int playback75Count,
-      @JsonKey(name: 'playback_100_count') int playback100Count,
-      int viewCount});
-}
+abstract mixin class $OrganicMediaMetricsCopyWith<$Res>  {
+  factory $OrganicMediaMetricsCopyWith(OrganicMediaMetrics value, $Res Function(OrganicMediaMetrics) _then) = _$OrganicMediaMetricsCopyWithImpl;
+@useResult
+$Res call({
+@JsonKey(name: 'playback_0_count') int playback0Count,@JsonKey(name: 'playback_25_count') int playback25Count,@JsonKey(name: 'playback_50_count') int playback50Count,@JsonKey(name: 'playback_75_count') int playback75Count,@JsonKey(name: 'playback_100_count') int playback100Count, int viewCount
+});
 
+
+
+
+}
 /// @nodoc
-class _$OrganicMediaMetricsCopyWithImpl<$Res, $Val extends OrganicMediaMetrics>
+class _$OrganicMediaMetricsCopyWithImpl<$Res>
     implements $OrganicMediaMetricsCopyWith<$Res> {
-  _$OrganicMediaMetricsCopyWithImpl(this._value, this._then);
+  _$OrganicMediaMetricsCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final OrganicMediaMetrics _self;
+  final $Res Function(OrganicMediaMetrics) _then;
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? playback0Count = null,
-    Object? playback25Count = null,
-    Object? playback50Count = null,
-    Object? playback75Count = null,
-    Object? playback100Count = null,
-    Object? viewCount = null,
-  }) {
-    return _then(_value.copyWith(
-      playback0Count: null == playback0Count
-          ? _value.playback0Count
-          : playback0Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback25Count: null == playback25Count
-          ? _value.playback25Count
-          : playback25Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback50Count: null == playback50Count
-          ? _value.playback50Count
-          : playback50Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback75Count: null == playback75Count
-          ? _value.playback75Count
-          : playback75Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback100Count: null == playback100Count
-          ? _value.playback100Count
-          : playback100Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      viewCount: null == viewCount
-          ? _value.viewCount
-          : viewCount // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of OrganicMediaMetrics
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? playback0Count = null,Object? playback25Count = null,Object? playback50Count = null,Object? playback75Count = null,Object? playback100Count = null,Object? viewCount = null,}) {
+  return _then(_self.copyWith(
+playback0Count: null == playback0Count ? _self.playback0Count : playback0Count // ignore: cast_nullable_to_non_nullable
+as int,playback25Count: null == playback25Count ? _self.playback25Count : playback25Count // ignore: cast_nullable_to_non_nullable
+as int,playback50Count: null == playback50Count ? _self.playback50Count : playback50Count // ignore: cast_nullable_to_non_nullable
+as int,playback75Count: null == playback75Count ? _self.playback75Count : playback75Count // ignore: cast_nullable_to_non_nullable
+as int,playback100Count: null == playback100Count ? _self.playback100Count : playback100Count // ignore: cast_nullable_to_non_nullable
+as int,viewCount: null == viewCount ? _self.viewCount : viewCount // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$_OrganicMediaMetricsCopyWith<$Res>
-    implements $OrganicMediaMetricsCopyWith<$Res> {
-  factory _$$_OrganicMediaMetricsCopyWith(_$_OrganicMediaMetrics value,
-          $Res Function(_$_OrganicMediaMetrics) then) =
-      __$$_OrganicMediaMetricsCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {@JsonKey(name: 'playback_0_count') int playback0Count,
-      @JsonKey(name: 'playback_25_count') int playback25Count,
-      @JsonKey(name: 'playback_50_count') int playback50Count,
-      @JsonKey(name: 'playback_75_count') int playback75Count,
-      @JsonKey(name: 'playback_100_count') int playback100Count,
-      int viewCount});
 }
 
-/// @nodoc
-class __$$_OrganicMediaMetricsCopyWithImpl<$Res>
-    extends _$OrganicMediaMetricsCopyWithImpl<$Res, _$_OrganicMediaMetrics>
-    implements _$$_OrganicMediaMetricsCopyWith<$Res> {
-  __$$_OrganicMediaMetricsCopyWithImpl(_$_OrganicMediaMetrics _value,
-      $Res Function(_$_OrganicMediaMetrics) _then)
-      : super(_value, _then);
 
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? playback0Count = null,
-    Object? playback25Count = null,
-    Object? playback50Count = null,
-    Object? playback75Count = null,
-    Object? playback100Count = null,
-    Object? viewCount = null,
-  }) {
-    return _then(_$_OrganicMediaMetrics(
-      playback0Count: null == playback0Count
-          ? _value.playback0Count
-          : playback0Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback25Count: null == playback25Count
-          ? _value.playback25Count
-          : playback25Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback50Count: null == playback50Count
-          ? _value.playback50Count
-          : playback50Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback75Count: null == playback75Count
-          ? _value.playback75Count
-          : playback75Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      playback100Count: null == playback100Count
-          ? _value.playback100Count
-          : playback100Count // ignore: cast_nullable_to_non_nullable
-              as int,
-      viewCount: null == viewCount
-          ? _value.viewCount
-          : viewCount // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
+/// Adds pattern-matching-related methods to [OrganicMediaMetrics].
+extension OrganicMediaMetricsPatterns on OrganicMediaMetrics {
+/// A variant of `map` that fallback to returning `orElse`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeMap<TResult extends Object?>(TResult Function( _OrganicMediaMetrics value)?  $default,{required TResult orElse(),}){
+final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics() when $default != null:
+return $default(_that);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// Callbacks receives the raw object, upcasted.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case final Subclass2 value:
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult map<TResult extends Object?>(TResult Function( _OrganicMediaMetrics value)  $default,){
+final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics():
+return $default(_that);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `map` that fallback to returning `null`.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case final Subclass value:
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? mapOrNull<TResult extends Object?>(TResult? Function( _OrganicMediaMetrics value)?  $default,){
+final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics() when $default != null:
+return $default(_that);case _:
+  return null;
+
+}
+}
+/// A variant of `when` that fallback to an `orElse` callback.
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return orElse();
+/// }
+/// ```
+
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function(@JsonKey(name: 'playback_0_count')  int playback0Count, @JsonKey(name: 'playback_25_count')  int playback25Count, @JsonKey(name: 'playback_50_count')  int playback50Count, @JsonKey(name: 'playback_75_count')  int playback75Count, @JsonKey(name: 'playback_100_count')  int playback100Count,  int viewCount)?  $default,{required TResult orElse(),}) {final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics() when $default != null:
+return $default(_that.playback0Count,_that.playback25Count,_that.playback50Count,_that.playback75Count,_that.playback100Count,_that.viewCount);case _:
+  return orElse();
+
+}
+}
+/// A `switch`-like method, using callbacks.
+///
+/// As opposed to `map`, this offers destructuring.
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case Subclass2(:final field2):
+///     return ...;
+/// }
+/// ```
+
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function(@JsonKey(name: 'playback_0_count')  int playback0Count, @JsonKey(name: 'playback_25_count')  int playback25Count, @JsonKey(name: 'playback_50_count')  int playback50Count, @JsonKey(name: 'playback_75_count')  int playback75Count, @JsonKey(name: 'playback_100_count')  int playback100Count,  int viewCount)  $default,) {final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics():
+return $default(_that.playback0Count,_that.playback25Count,_that.playback50Count,_that.playback75Count,_that.playback100Count,_that.viewCount);case _:
+  throw StateError('Unexpected subclass');
+
+}
+}
+/// A variant of `when` that fallback to returning `null`
+///
+/// It is equivalent to doing:
+/// ```dart
+/// switch (sealedClass) {
+///   case Subclass(:final field):
+///     return ...;
+///   case _:
+///     return null;
+/// }
+/// ```
+
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function(@JsonKey(name: 'playback_0_count')  int playback0Count, @JsonKey(name: 'playback_25_count')  int playback25Count, @JsonKey(name: 'playback_50_count')  int playback50Count, @JsonKey(name: 'playback_75_count')  int playback75Count, @JsonKey(name: 'playback_100_count')  int playback100Count,  int viewCount)?  $default,) {final _that = this;
+switch (_that) {
+case _OrganicMediaMetrics() when $default != null:
+return $default(_that.playback0Count,_that.playback25Count,_that.playback50Count,_that.playback75Count,_that.playback100Count,_that.viewCount);case _:
+  return null;
+
+}
+}
+
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_OrganicMediaMetrics implements _OrganicMediaMetrics {
-  const _$_OrganicMediaMetrics(
-      {@JsonKey(name: 'playback_0_count') required this.playback0Count,
-      @JsonKey(name: 'playback_25_count') required this.playback25Count,
-      @JsonKey(name: 'playback_50_count') required this.playback50Count,
-      @JsonKey(name: 'playback_75_count') required this.playback75Count,
-      @JsonKey(name: 'playback_100_count') required this.playback100Count,
-      required this.viewCount});
 
-  factory _$_OrganicMediaMetrics.fromJson(Map<String, dynamic> json) =>
-      _$$_OrganicMediaMetricsFromJson(json);
+class _OrganicMediaMetrics implements OrganicMediaMetrics {
+  const _OrganicMediaMetrics({@JsonKey(name: 'playback_0_count') required this.playback0Count, @JsonKey(name: 'playback_25_count') required this.playback25Count, @JsonKey(name: 'playback_50_count') required this.playback50Count, @JsonKey(name: 'playback_75_count') required this.playback75Count, @JsonKey(name: 'playback_100_count') required this.playback100Count, required this.viewCount});
+  factory _OrganicMediaMetrics.fromJson(Map<String, dynamic> json) => _$OrganicMediaMetricsFromJson(json);
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @override
-  @JsonKey(name: 'playback_0_count')
-  final int playback0Count;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@override@JsonKey(name: 'playback_0_count') final  int playback0Count;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@override@JsonKey(name: 'playback_25_count') final  int playback25Count;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@override@JsonKey(name: 'playback_50_count') final  int playback50Count;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@override@JsonKey(name: 'playback_75_count') final  int playback75Count;
+/// The number of users who played through to each quartile in a video.
+///
+/// This reflects the number of quartile views across all Tweets in which
+/// the given video has been posted.
+@override@JsonKey(name: 'playback_100_count') final  int playback100Count;
+/// A count of how many times the video included in the Tweet has been
+/// viewed.
+///
+/// This is the number of video views aggregated across all Tweets in which
+/// the given video has been posted. That means that the metric includes
+/// the combined views from any instance where the video has been Retweeted
+/// or re-posted in separate Tweets.
+@override final  int viewCount;
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @override
-  @JsonKey(name: 'playback_25_count')
-  final int playback25Count;
+/// Create a copy of OrganicMediaMetrics
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$OrganicMediaMetricsCopyWith<_OrganicMediaMetrics> get copyWith => __$OrganicMediaMetricsCopyWithImpl<_OrganicMediaMetrics>(this, _$identity);
 
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @override
-  @JsonKey(name: 'playback_50_count')
-  final int playback50Count;
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @override
-  @JsonKey(name: 'playback_75_count')
-  final int playback75Count;
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @override
-  @JsonKey(name: 'playback_100_count')
-  final int playback100Count;
-
-  /// A count of how many times the video included in the Tweet has been
-  /// viewed.
-  ///
-  /// This is the number of video views aggregated across all Tweets in which
-  /// the given video has been posted. That means that the metric includes
-  /// the combined views from any instance where the video has been Retweeted
-  /// or re-posted in separate Tweets.
-  @override
-  final int viewCount;
-
-  @override
-  String toString() {
-    return 'OrganicMediaMetrics(playback0Count: $playback0Count, playback25Count: $playback25Count, playback50Count: $playback50Count, playback75Count: $playback75Count, playback100Count: $playback100Count, viewCount: $viewCount)';
-  }
-
-  @override
-  bool operator ==(dynamic other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$_OrganicMediaMetrics &&
-            (identical(other.playback0Count, playback0Count) ||
-                other.playback0Count == playback0Count) &&
-            (identical(other.playback25Count, playback25Count) ||
-                other.playback25Count == playback25Count) &&
-            (identical(other.playback50Count, playback50Count) ||
-                other.playback50Count == playback50Count) &&
-            (identical(other.playback75Count, playback75Count) ||
-                other.playback75Count == playback75Count) &&
-            (identical(other.playback100Count, playback100Count) ||
-                other.playback100Count == playback100Count) &&
-            (identical(other.viewCount, viewCount) ||
-                other.viewCount == viewCount));
-  }
-
-  @JsonKey(ignore: true)
-  @override
-  int get hashCode => Object.hash(runtimeType, playback0Count, playback25Count,
-      playback50Count, playback75Count, playback100Count, viewCount);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$_OrganicMediaMetricsCopyWith<_$_OrganicMediaMetrics> get copyWith =>
-      __$$_OrganicMediaMetricsCopyWithImpl<_$_OrganicMediaMetrics>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$_OrganicMediaMetricsToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$OrganicMediaMetricsToJson(this, );
 }
 
-abstract class _OrganicMediaMetrics implements OrganicMediaMetrics {
-  const factory _OrganicMediaMetrics(
-      {@JsonKey(name: 'playback_0_count') required final int playback0Count,
-      @JsonKey(name: 'playback_25_count') required final int playback25Count,
-      @JsonKey(name: 'playback_50_count') required final int playback50Count,
-      @JsonKey(name: 'playback_75_count') required final int playback75Count,
-      @JsonKey(name: 'playback_100_count') required final int playback100Count,
-      required final int viewCount}) = _$_OrganicMediaMetrics;
-
-  factory _OrganicMediaMetrics.fromJson(Map<String, dynamic> json) =
-      _$_OrganicMediaMetrics.fromJson;
-
-  @override
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_0_count')
-  int get playback0Count;
-  @override
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_25_count')
-  int get playback25Count;
-  @override
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_50_count')
-  int get playback50Count;
-  @override
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_75_count')
-  int get playback75Count;
-  @override
-
-  /// The number of users who played through to each quartile in a video.
-  ///
-  /// This reflects the number of quartile views across all Tweets in which
-  /// the given video has been posted.
-  @JsonKey(name: 'playback_100_count')
-  int get playback100Count;
-  @override
-
-  /// A count of how many times the video included in the Tweet has been
-  /// viewed.
-  ///
-  /// This is the number of video views aggregated across all Tweets in which
-  /// the given video has been posted. That means that the metric includes
-  /// the combined views from any instance where the video has been Retweeted
-  /// or re-posted in separate Tweets.
-  int get viewCount;
-  @override
-  @JsonKey(ignore: true)
-  _$$_OrganicMediaMetricsCopyWith<_$_OrganicMediaMetrics> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _OrganicMediaMetrics&&(identical(other.playback0Count, playback0Count) || other.playback0Count == playback0Count)&&(identical(other.playback25Count, playback25Count) || other.playback25Count == playback25Count)&&(identical(other.playback50Count, playback50Count) || other.playback50Count == playback50Count)&&(identical(other.playback75Count, playback75Count) || other.playback75Count == playback75Count)&&(identical(other.playback100Count, playback100Count) || other.playback100Count == playback100Count)&&(identical(other.viewCount, viewCount) || other.viewCount == viewCount));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,playback0Count,playback25Count,playback50Count,playback75Count,playback100Count,viewCount);
+
+@override
+String toString() {
+  return 'OrganicMediaMetrics(playback0Count: $playback0Count, playback25Count: $playback25Count, playback50Count: $playback50Count, playback75Count: $playback75Count, playback100Count: $playback100Count, viewCount: $viewCount)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$OrganicMediaMetricsCopyWith<$Res> implements $OrganicMediaMetricsCopyWith<$Res> {
+  factory _$OrganicMediaMetricsCopyWith(_OrganicMediaMetrics value, $Res Function(_OrganicMediaMetrics) _then) = __$OrganicMediaMetricsCopyWithImpl;
+@override @useResult
+$Res call({
+@JsonKey(name: 'playback_0_count') int playback0Count,@JsonKey(name: 'playback_25_count') int playback25Count,@JsonKey(name: 'playback_50_count') int playback50Count,@JsonKey(name: 'playback_75_count') int playback75Count,@JsonKey(name: 'playback_100_count') int playback100Count, int viewCount
+});
+
+
+
+
+}
+/// @nodoc
+class __$OrganicMediaMetricsCopyWithImpl<$Res>
+    implements _$OrganicMediaMetricsCopyWith<$Res> {
+  __$OrganicMediaMetricsCopyWithImpl(this._self, this._then);
+
+  final _OrganicMediaMetrics _self;
+  final $Res Function(_OrganicMediaMetrics) _then;
+
+/// Create a copy of OrganicMediaMetrics
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? playback0Count = null,Object? playback25Count = null,Object? playback50Count = null,Object? playback75Count = null,Object? playback100Count = null,Object? viewCount = null,}) {
+  return _then(_OrganicMediaMetrics(
+playback0Count: null == playback0Count ? _self.playback0Count : playback0Count // ignore: cast_nullable_to_non_nullable
+as int,playback25Count: null == playback25Count ? _self.playback25Count : playback25Count // ignore: cast_nullable_to_non_nullable
+as int,playback50Count: null == playback50Count ? _self.playback50Count : playback50Count // ignore: cast_nullable_to_non_nullable
+as int,playback75Count: null == playback75Count ? _self.playback75Count : playback75Count // ignore: cast_nullable_to_non_nullable
+as int,playback100Count: null == playback100Count ? _self.playback100Count : playback100Count // ignore: cast_nullable_to_non_nullable
+as int,viewCount: null == viewCount ? _self.viewCount : viewCount // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
+// dart format on

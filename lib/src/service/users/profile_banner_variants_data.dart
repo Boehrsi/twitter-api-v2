@@ -13,7 +13,7 @@ part 'profile_banner_variants_data.freezed.dart';
 part 'profile_banner_variants_data.g.dart';
 
 @freezed
-class ProfileBannerVariantsData
+abstract class ProfileBannerVariantsData
     with _$ProfileBannerVariantsData
     implements Data {
   const factory ProfileBannerVariantsData({

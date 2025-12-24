@@ -15,7 +15,9 @@ part 'trending_location_data.freezed.dart';
 part 'trending_location_data.g.dart';
 
 @freezed
-class TrendingLocationData with _$TrendingLocationData implements Data {
+abstract class TrendingLocationData
+    with _$TrendingLocationData
+    implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory TrendingLocationData({
     /// The identifier of location for trending topics.

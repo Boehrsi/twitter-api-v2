@@ -8,32 +8,33 @@ part of 'tweet_withheld.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_TweetWithheld _$$_TweetWithheldFromJson(Map json) => $checkedCreate(
-      r'_$_TweetWithheld',
-      json,
-      ($checkedConvert) {
-        final val = _$_TweetWithheld(
-          dueToCopyright: $checkedConvert('copyright', (v) => v as bool),
-          countries: $checkedConvert(
-              'country_codes',
-              (v) => (v as List<dynamic>)
-                  .map((e) => $enumDecode(_$CountryEnumMap, e))
-                  .toList()),
-        );
-        return val;
-      },
-      fieldKeyMap: const {
-        'dueToCopyright': 'copyright',
-        'countries': 'country_codes'
-      },
+_TweetWithheld _$TweetWithheldFromJson(Map json) => $checkedCreate(
+  '_TweetWithheld',
+  json,
+  ($checkedConvert) {
+    final val = _TweetWithheld(
+      dueToCopyright: $checkedConvert('copyright', (v) => v as bool),
+      countries: $checkedConvert(
+        'country_codes',
+        (v) => (v as List<dynamic>)
+            .map((e) => $enumDecode(_$CountryEnumMap, e))
+            .toList(),
+      ),
     );
+    return val;
+  },
+  fieldKeyMap: const {
+    'dueToCopyright': 'copyright',
+    'countries': 'country_codes',
+  },
+);
 
-Map<String, dynamic> _$$_TweetWithheldToJson(_$_TweetWithheld instance) =>
-    <String, dynamic>{
-      'copyright': instance.dueToCopyright,
-      'country_codes':
-          instance.countries.map((e) => _$CountryEnumMap[e]!).toList(),
-    };
+Map<String, dynamic> _$TweetWithheldToJson(
+  _TweetWithheld instance,
+) => <String, dynamic>{
+  'copyright': instance.dueToCopyright,
+  'country_codes': instance.countries.map((e) => _$CountryEnumMap[e]!).toList(),
+};
 
 const _$CountryEnumMap = {
   Country.afghanistan: 'AF',

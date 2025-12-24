@@ -14,7 +14,7 @@ part 'bookmark_state_data.freezed.dart';
 part 'bookmark_state_data.g.dart';
 
 @freezed
-class BookmarkStateData with _$BookmarkStateData implements Data {
+abstract class BookmarkStateData with _$BookmarkStateData implements Data {
   const factory BookmarkStateData({
     /// Indicates whether the user bookmarks the specified Tweet as a result
     /// of this request.

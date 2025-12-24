@@ -14,7 +14,7 @@ part 'batch_compliance_data.freezed.dart';
 part 'batch_compliance_data.g.dart';
 
 @freezed
-class BatchComplianceData with _$BatchComplianceData implements Data {
+abstract class BatchComplianceData with _$BatchComplianceData implements Data {
   const factory BatchComplianceData({
     /// The unique identifier for this job.
     required String id,

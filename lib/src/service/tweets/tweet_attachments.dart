@@ -11,7 +11,7 @@ part 'tweet_attachments.freezed.dart';
 part 'tweet_attachments.g.dart';
 
 @freezed
-class TweetAttachments with _$TweetAttachments {
+abstract class TweetAttachments with _$TweetAttachments {
   @JsonSerializable(includeIfNull: false)
   const factory TweetAttachments({
     /// List of unique identifiers of media attached to this Tweet. These

@@ -9,7 +9,7 @@ part 'matching_rule.freezed.dart';
 part 'matching_rule.g.dart';
 
 @freezed
-class MatchingRule with _$MatchingRule {
+abstract class MatchingRule with _$MatchingRule {
   const factory MatchingRule({
     /// ID of the filter rule that matched against the Tweet delivered.
     required String id,

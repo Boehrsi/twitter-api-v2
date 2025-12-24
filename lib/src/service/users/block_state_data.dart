@@ -14,7 +14,7 @@ part 'block_state_data.freezed.dart';
 part 'block_state_data.g.dart';
 
 @freezed
-class BlockStateData with _$BlockStateData implements Data {
+abstract class BlockStateData with _$BlockStateData implements Data {
   const factory BlockStateData({
     /// Indicates whether the user is blocking the specified user as a result
     /// of this request.

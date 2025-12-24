@@ -16,7 +16,7 @@ part 'user_description_entity.freezed.dart';
 part 'user_description_entity.g.dart';
 
 @freezed
-class UserDescriptionEntity with _$UserDescriptionEntity {
+abstract class UserDescriptionEntity with _$UserDescriptionEntity {
   @JsonSerializable(includeIfNull: false)
   const factory UserDescriptionEntity({
     /// Contains details about any URLs included in the user's description.

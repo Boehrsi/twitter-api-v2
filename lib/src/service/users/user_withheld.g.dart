@@ -8,27 +8,24 @@ part of 'user_withheld.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_UserWithheld _$$_UserWithheldFromJson(Map json) => $checkedCreate(
-      r'_$_UserWithheld',
-      json,
-      ($checkedConvert) {
-        final val = _$_UserWithheld(
-          countries: $checkedConvert(
-              'country_codes',
-              (v) => (v as List<dynamic>)
-                  .map((e) => $enumDecode(_$CountryEnumMap, e))
-                  .toList()),
-        );
-        return val;
-      },
-      fieldKeyMap: const {'countries': 'country_codes'},
-    );
+_UserWithheld _$UserWithheldFromJson(Map json) =>
+    $checkedCreate('_UserWithheld', json, ($checkedConvert) {
+      final val = _UserWithheld(
+        countries: $checkedConvert(
+          'country_codes',
+          (v) => (v as List<dynamic>)
+              .map((e) => $enumDecode(_$CountryEnumMap, e))
+              .toList(),
+        ),
+      );
+      return val;
+    }, fieldKeyMap: const {'countries': 'country_codes'});
 
-Map<String, dynamic> _$$_UserWithheldToJson(_$_UserWithheld instance) =>
-    <String, dynamic>{
-      'country_codes':
-          instance.countries.map((e) => _$CountryEnumMap[e]!).toList(),
-    };
+Map<String, dynamic> _$UserWithheldToJson(
+  _UserWithheld instance,
+) => <String, dynamic>{
+  'country_codes': instance.countries.map((e) => _$CountryEnumMap[e]!).toList(),
+};
 
 const _$CountryEnumMap = {
   Country.afghanistan: 'AF',

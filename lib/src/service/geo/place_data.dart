@@ -25,7 +25,7 @@ part 'place_data.g.dart';
 /// Use the expansion with the field parameter: place.fields when requesting
 /// additional fields to complete the object.
 @freezed
-class PlaceData with _$PlaceData implements Data {
+abstract class PlaceData with _$PlaceData implements Data {
   @JsonSerializable(includeIfNull: false)
   const factory PlaceData({
     /// The unique identifier of the expanded place, if this is a point of
